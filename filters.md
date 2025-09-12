@@ -1361,36 +1361,24 @@ function my_custom_messages_email_args($args) {
     }
     ```
 
-### `cosmosfarm_members_template_subscription_payment method`
+### `cosmosfarm_members_template_subscription_payment_method`
 
-* **설명**: 구독 결제 수단 템플릿 파일 경로를 필터링합니다. (오타 Deprecated: 공백 → `_`)
-* **상태**: Deprecated (향후 제거 예정). 새 훅명 사용 권장.
-* **대체**: `cosmosfarm_members_template_subscription_payment_method`
+* **설명**: 구독 결제 수단 템플릿 파일 경로를 필터링합니다.
 * **파일**: `class/Cosmosfarm_Members_Skin.class.php`
 
 ```php
-// 구(old) - 호환용
-add_filter('cosmosfarm_members_template_subscription_payment method', 'my_custom_payment_method_template');
-
-// 신(new) - 권장 사용
 add_filter('cosmosfarm_members_template_subscription_payment_method', 'my_custom_payment_method_template');
 function my_custom_payment_method_template($file_path) {
     return get_stylesheet_directory() . '/cosmosfarm-members/subscription-payment-method.php';
 }
 ```
 
-### `cosmosfarm_members_alimtalk_template_paremeter`
+### `cosmosfarm_members_alimtalk_template_parameter`
 
-* **설명**: 알림톡 템플릿 파라미터를 필터링합니다. (오타 Deprecated: `paremeter` → `parameter`)
-* **상태**: Deprecated (향후 제거 예정). 새 훅명 사용 권장.
-* **대체**: `cosmosfarm_members_alimtalk_template_parameter`
+* **설명**: 알림톡 템플릿 파라미터를 필터링합니다.
 * **파일**: `class/Cosmosfarm_Members_Sms_Nhn.class.php`, `class/Cosmosfarm_Members_Sms_Solapi.php`
 
 ```php
-// 구(old) - 호환용
-add_filter('cosmosfarm_members_alimtalk_template_paremeter', 'my_custom_alimtalk_template_param', 10, 2);
-
-// 신(new) - 권장 사용
 add_filter('cosmosfarm_members_alimtalk_template_parameter', 'my_custom_alimtalk_template_param', 10, 2);
 function my_custom_alimtalk_template_param($template_parameter, $template_code) {
     $template_parameter['custom_key'] = 'custom_value';
