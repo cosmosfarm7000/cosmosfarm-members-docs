@@ -121,17 +121,6 @@
     }
     ```
 
-### `wp_login`
-*   **설명**: 워드프레스 사용자가 로그인할 때 실행됩니다. (워드프레스 코어 훅)
-*   **파일**: `class/Cosmosfarm_Members.class.php`, `class/Cosmosfarm_Members_Controller.class.php`, `class/Cosmosfarm_Members_Security.class.php`
-*   **예제**:
-    ```php
-    add_action('wp_login', 'my_custom_login_action', 10, 2);
-    function my_custom_login_action($user_login, $user) {
-        error_log('사용자 로그인: ' . $user_login . ' (ID: ' . $user->ID . ')');
-    }
-    ```
-
 ### `cosmosfarm_members_pre_activity_history_download`
 *   **설명**: 활동 기록 다운로드 전에 실행됩니다.
 *   **파일**: `class/Cosmosfarm_Members_Controller.class.php`

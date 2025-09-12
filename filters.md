@@ -5,11 +5,9 @@
 ## 훅 목록 및 예제
 
 ### `cosmosfarm_members_menu_items`
-
-* **설명**: 관리자 메뉴 항목을 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members.class.php`
-* **예제**:
-
+*   **설명**: 관리자 메뉴 항목을 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_menu_items', 'my_custom_menu_items');
     function my_custom_menu_items($menu_items) {
@@ -24,11 +22,9 @@
     ```
 
 ### `cosmosfarm_members_template_social_buttons`
-
-* **설명**: 소셜 버튼 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members.class.php`
-* **예제**:
-
+*   **설명**: 소셜 버튼 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_social_buttons', 'my_custom_social_buttons_template');
     function my_custom_social_buttons_template($file_path) {
@@ -38,11 +34,9 @@
     ```
 
 ### `cosmosfarm_members_register_form_policy_fields`
-
-* **설명**: 회원가입 폼의 정책 필드를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members.class.php`
-* **예제**:
-
+*   **설명**: 회원가입 폼의 정책 필드를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_register_form_policy_fields', 'my_custom_policy_fields');
     function my_custom_policy_fields($fields) {
@@ -57,11 +51,9 @@
     ```
 
 ### `wpmem_register_fields_arr`
-
-* **설명**: WP-Members 플러그인의 회원가입 필드를 필터링합니다. (WP-Members 코어 훅)
-* **파일**: `class/Cosmosfarm_Members.class.php`, `class/Cosmosfarm_Members_Controller.class.php`
-* **예제**:
-
+*   **설명**: WP-Members 플러그인의 회원가입 필드를 필터링합니다. (WP-Members 코어 훅)
+*   **파일**: `class/Cosmosfarm_Members.class.php`, `class/Cosmosfarm_Members_Controller.class.php`
+*   **예제**:
     ```php
     add_filter('wpmem_register_fields_arr', 'my_custom_wpmem_fields');
     function my_custom_wpmem_fields($fields) {
@@ -77,11 +69,9 @@
     ```
 
 ### `cosmosfarm_members_page_restriction_message`
-
-* **설명**: 페이지 제한 메시지를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members.class.php`
-* **예제**:
-
+*   **설명**: 페이지 제한 메시지를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_page_restriction_message', 'my_custom_restriction_message');
     function my_custom_restriction_message($message) {
@@ -90,11 +80,9 @@
     ```
 
 ### `cosmosfarm_members_page_restriction_login_message`
-
-* **설명**: 페이지 제한 시 로그인 메시지를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members.class.php`
-* **예제**:
-
+*   **설명**: 페이지 제한 시 로그인 메시지를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_page_restriction_login_message', 'my_custom_restriction_login_message');
     function my_custom_restriction_login_message($message) {
@@ -103,11 +91,9 @@
     ```
 
 ### `cosmosfarm_members_page_restriction_register_message`
-
-* **설명**: 페이지 제한 시 회원가입 메시지를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members.class.php`
-* **예제**:
-
+*   **설명**: 페이지 제한 시 회원가입 메시지를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_page_restriction_register_message', 'my_custom_restriction_register_message');
     function my_custom_restriction_register_message($message) {
@@ -116,11 +102,9 @@
     ```
 
 ### `cosmosfarm_members_page_restriction_permission_message`
-
-* **설명**: 페이지 제한 시 권한 부족 메시지를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members.class.php`
-* **예제**:
-
+*   **설명**: 페이지 제한 시 권한 부족 메시지를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_page_restriction_permission_message', 'my_custom_restriction_permission_message');
     function my_custom_restriction_permission_message($message) {
@@ -129,11 +113,9 @@
     ```
 
 ### `cosmosfarm_members_page_restriction`
-
-* **설명**: 페이지 제한 여부를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members.class.php`
-* **예제**:
-
+*   **설명**: 페이지 제한 여부를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_page_restriction', 'my_custom_page_restriction_logic');
     function my_custom_page_restriction_logic($page_restriction) {
@@ -146,11 +128,9 @@
     ```
 
 ### `cosmosfarm_members_page_restriction_content`
-
-* **설명**: 페이지 제한 시 표시될 콘텐츠를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members.class.php`
-* **예제**:
-
+*   **설명**: 페이지 제한 시 표시될 콘텐츠를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_page_restriction_content', 'my_custom_restriction_content', 10, 2);
     function my_custom_restriction_content($content, $restriction_type) {
@@ -162,11 +142,9 @@
     ```
 
 ### `cosmosfarm_members_category_restriction`
-
-* **설명**: 카테고리 제한 여부를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members.class.php`
-* **예제**:
-
+*   **설명**: 카테고리 제한 여부를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_category_restriction', 'my_custom_category_restriction_logic', 10, 2);
     function my_custom_category_restriction_logic($category_restriction, $category) {
@@ -179,11 +157,9 @@
     ```
 
 ### `wpmem_dialogs`
-
-* **설명**: WP-Members 플러그인의 다이얼로그 메시지를 필터링합니다. (WP-Members 코어 훅)
-* **파일**: `class/Cosmosfarm_Members.class.php`
-* **예제**:
-
+*   **설명**: WP-Members 플러그인의 다이얼로그 메시지를 필터링합니다. (WP-Members 코어 훅)
+*   **파일**: `class/Cosmosfarm_Members.class.php`
+*   **예제**:
     ```php
     add_filter('wpmem_dialogs', 'my_custom_wpmem_dialogs');
     function my_custom_wpmem_dialogs($dialogs) {
@@ -193,11 +169,9 @@
     ```
 
 ### `cosmosfarm_members_subscription_send_sms_again_message`
-
-* **설명**: 구독 재결제 SMS 메시지를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members.class.php`
-* **예제**:
-
+*   **설명**: 구독 재결제 SMS 메시지를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_subscription_send_sms_again_message', 'my_custom_sms_again_message', 10, 3);
     function my_custom_sms_again_message($sms, $order, $product) {
@@ -207,11 +181,9 @@
     ```
 
 ### `cosmosfarm_members_order_subscription_again_result`
-
-* **설명**: 구독 재결제 결과를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Controller.class.php`
-* **예제**:
-
+*   **설명**: 구독 재결제 결과를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Controller.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_order_subscription_again_result', 'my_custom_subscription_again_result');
     function my_custom_subscription_again_result($result) {
@@ -224,11 +196,9 @@
     ```
 
 ### `cosmosfarm_members_order_cancel_result`
-
-* **설명**: 주문 취소 결과를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Controller.class.php`
-* **예제**:
-
+*   **설명**: 주문 취소 결과를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Controller.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_order_cancel_result', 'my_custom_order_cancel_result');
     function my_custom_order_cancel_result($result) {
@@ -240,11 +210,9 @@
     ```
 
 ### `cosmosfarm_members_order_download_columns`
-
-* **설명**: 주문 다운로드 시 컬럼 목록을 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Controller.class.php`
-* **예제**:
-
+*   **설명**: 주문 다운로드 시 컬럼 목록을 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Controller.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_order_download_columns', 'my_custom_order_download_columns');
     function my_custom_order_download_columns($columns) {
@@ -254,11 +222,9 @@
     ```
 
 ### `cosmosfarm_members_order_download_columns_value`
-
-* **설명**: 주문 다운로드 시 특정 컬럼의 값을 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Controller.class.php`
-* **예제**:
-
+*   **설명**: 주문 다운로드 시 특정 컬럼의 값을 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Controller.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_order_download_columns_value', 'my_custom_order_download_column_value', 10, 3);
     function my_custom_order_download_column_value($column_value, $column_key, $order) {
@@ -270,11 +236,9 @@
     ```
 
 ### `cosmosfarm_members_order_csv_download_row_data`
-
-* **설명**: 주문 CSV 다운로드 시 각 행의 데이터를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Controller.class.php`
-* **예제**:
-
+*   **설명**: 주문 CSV 다운로드 시 각 행의 데이터를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Controller.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_order_csv_download_row_data', 'my_custom_order_csv_row_data', 10, 2);
     function my_custom_order_csv_row_data($row_data, $order) {
@@ -284,11 +248,9 @@
     ```
 
 ### `cosmosfarm_members_users_csv_download_columns`
-
-* **설명**: 사용자 CSV 다운로드 시 컬럼 목록을 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Controller.class.php`
-* **예제**:
-
+*   **설명**: 사용자 CSV 다운로드 시 컬럼 목록을 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Controller.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_users_csv_download_columns', 'my_custom_users_csv_columns');
     function my_custom_users_csv_columns($columns) {
@@ -298,11 +260,9 @@
     ```
 
 ### `cosmosfarm_members_users_csv_download_add_usermeta`
-
-* **설명**: 사용자 CSV 다운로드 시 추가할 사용자 메타 필드를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Controller.class.php`
-* **예제**:
-
+*   **설명**: 사용자 CSV 다운로드 시 추가할 사용자 메타 필드를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Controller.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_users_csv_download_add_usermeta', 'my_custom_users_csv_usermeta');
     function my_custom_users_csv_usermeta($add_usermeta) {
@@ -312,11 +272,9 @@
     ```
 
 ### `cosmosfarm_members_users_csv_download_usermeta_value`
-
-* **설명**: 사용자 CSV 다운로드 시 특정 사용자 메타 필드의 값을 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Controller.class.php`
-* **예제**:
-
+*   **설명**: 사용자 CSV 다운로드 시 특정 사용자 메타 필드의 값을 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Controller.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_users_csv_download_usermeta_value', 'my_custom_users_csv_usermeta_value', 10, 3);
     function my_custom_users_csv_usermeta_value($meta_value, $meta_key, $user) {
@@ -328,11 +286,9 @@
     ```
 
 ### `cosmosfarm_members_users_csv_download_row_data`
-
-* **설명**: 사용자 CSV 다운로드 시 각 행의 데이터를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Controller.class.php`
-* **예제**:
-
+*   **설명**: 사용자 CSV 다운로드 시 각 행의 데이터를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Controller.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_users_csv_download_row_data', 'my_custom_users_csv_row_data', 10, 2);
     function my_custom_users_csv_row_data($row_data, $user) {
@@ -342,11 +298,9 @@
     ```
 
 ### `cosmosfarm_members_social_login_redirect_to`
-
-* **설명**: 소셜 로그인 후 리다이렉트될 URL을 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Controller.class.php`
-* **예제**:
-
+*   **설명**: 소셜 로그인 후 리다이렉트될 URL을 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Controller.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_social_login_redirect_to', 'my_custom_social_login_redirect', 10, 4);
     function my_custom_social_login_redirect($redirect_to, $profile, $user, $random_password) {
@@ -355,11 +309,9 @@
     ```
 
 ### `cosmosfarm_members_get_social_api`
-
-* **설명**: 소셜 API 객체를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Controller.class.php`
-* **예제**:
-
+*   **설명**: 소셜 API 객체를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Controller.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_get_social_api', 'my_custom_social_api_object', 10, 2);
     function my_custom_social_api_object($api, $channel) {
@@ -372,11 +324,9 @@
     ```
 
 ### `cosmosfarm_members_use_login_timeout`
-
-* **설명**: 로그인 타임아웃 사용 여부를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Controller.class.php`, `class/Cosmosfarm_Members_Security.class.php`
-* **예제**:
-
+*   **설명**: 로그인 타임아웃 사용 여부를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Controller.class.php`, `class/Cosmosfarm_Members_Security.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_use_login_timeout', 'my_custom_login_timeout_setting');
     function my_custom_login_timeout_setting($use_login_timeout) {
@@ -385,11 +335,9 @@
     ```
 
 ### `cosmosfarm_members_certification_confirm_data`
-
-* **설명**: 본인 인증 확인 데이터를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Controller.class.php`
-* **예제**:
-
+*   **설명**: 본인 인증 확인 데이터를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Controller.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_certification_confirm_data', 'my_custom_certification_data');
     function my_custom_certification_data($certification) {
@@ -399,11 +347,9 @@
     ```
 
 ### `cosmosfarm_members_subscription_register_card_result`
-
-* **설명**: 구독 카드 등록 결과를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Controller.class.php`
-* **예제**:
-
+*   **설명**: 구독 카드 등록 결과를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Controller.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_subscription_register_card_result', 'my_custom_register_card_result');
     function my_custom_register_card_result($result) {
@@ -415,11 +361,9 @@
     ```
 
 ### `cosmosfarm_members_pre_subscription_request_pay_result`
-
-* **설명**: 구독 결제 요청 전 결과(유효성 검사 등)를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Controller.class.php`
-* **예제**:
-
+*   **설명**: 구독 결제 요청 전 결과(유효성 검사 등)를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Controller.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_pre_subscription_request_pay_result', 'my_custom_pre_pay_result');
     function my_custom_pre_pay_result($result) {
@@ -429,24 +373,6 @@
         return $result;
     }
     ```
-
-### `cosmosfarm_memebers_after_coupon_calculate_price`
-
-* **설명**: 쿠폰 적용 후 가격을 필터링합니다. (오타 Deprecated: `memebers` → `members`)
-* **상태**: Deprecated (vNEXT 유지되나 제거 예정). 새 코드에서는 교정된 훅 사용 권장.
-* **대체**: `cosmosfarm_members_after_coupon_calculate_price`
-* **파일**: `class/Cosmosfarm_Members_Controller.class.php`
-
-```php
-// 기존(Deprecated) - 호환용
-add_filter('cosmosfarm_memebers_after_coupon_calculate_price', 'my_custom_after_coupon_price', 10, 2);
-function my_custom_after_coupon_price($price, $product_id) {
-    if ($product_id == 123) {
-        $price = $price * 0.9;
-    }
-    return $price;
-}
-```
 
 ### `cosmosfarm_members_after_coupon_calculate_price`
 
@@ -821,11 +747,9 @@ function my_custom_comments_notify_text($text, $content, $board, $builder) {
 ```
 
 ### `cosmosfarm_members_comments_notify_insert`
-
-* **설명**: 댓글 삽입 시 알림 데이터를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_KBoard.class.php`
-* **예제**:
-
+*   **설명**: 댓글 삽입 시 알림 데이터를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_KBoard.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_comments_notify_insert', 'my_custom_comments_notify_insert', 10, 4);
     function my_custom_comments_notify_insert($notification, $comment_uid, $content_uid, $board) {
@@ -834,11 +758,9 @@ function my_custom_comments_notify_text($text, $content, $board, $builder) {
     ```
 
 ### `cosmosfarm_members_kboard_notify_default`
-
-* **설명**: KBoard 알림 기본값을 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_KBoard.class.php`
-* **예제**:
-
+*   **설명**: KBoard 알림 기본값을 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_KBoard.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_kboard_notify_default', 'my_custom_kboard_notify_default', 10, 2);
     function my_custom_kboard_notify_default($default, $board) {
@@ -847,11 +769,9 @@ function my_custom_comments_notify_text($text, $content, $board, $builder) {
     ```
 
 ### `cosmosfarm_members_comments_notify_default`
-
-* **설명**: 댓글 알림 기본값을 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_KBoard.class.php`
-* **예제**:
-
+*   **설명**: 댓글 알림 기본값을 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_KBoard.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_comments_notify_default', 'my_custom_comments_notify_default', 10, 2);
     function my_custom_comments_notify_default($default, $board) {
@@ -873,11 +793,9 @@ function my_custom_messages_email_args($args) {
 ```
 
 ### `cosmosfarm_members_messages_subnotify_alimtalk_args`
-
-* **설명**: 메시지 알림 알림톡 인수를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Message.class.php`
-* **예제**:
-
+*   **설명**: 메시지 알림 알림톡 인수를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Message.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_messages_subnotify_alimtalk_args', 'my_custom_messages_alimtalk_args', 10, 2);
     function my_custom_messages_alimtalk_args($alimtalk_args, $message_object) {
@@ -887,11 +805,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_messages_subnotify_sms_args`
-
-* **설명**: 메시지 알림 SMS 인수를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Message.class.php`
-* **예제**:
-
+*   **설명**: 메시지 알림 SMS 인수를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Message.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_messages_subnotify_sms_args', 'my_custom_messages_sms_args', 10, 2);
     function my_custom_messages_sms_args($sms_args, $message_object) {
@@ -901,11 +817,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_notifications_subnotify_email_args`
-
-* **설명**: 알림 알림 이메일 인수를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Notification.class.php`
-* **예제**:
-
+*   **설명**: 알림 알림 이메일 인수를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Notification.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_notifications_subnotify_email_args', 'my_custom_notifications_email_args');
     function my_custom_notifications_email_args($args) {
@@ -914,11 +828,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_notifications_subnotify_alimtalk_args`
-
-* **설명**: 알림 알림 알림톡 인수를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Notification.class.php`
-* **예제**:
-
+*   **설명**: 알림 알림 알림톡 인수를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Notification.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_notifications_subnotify_alimtalk_args', 'my_custom_notifications_alimtalk_args', 10, 2);
     function my_custom_notifications_alimtalk_args($alimtalk_args, $notification_object) {
@@ -927,11 +839,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_notifications_subnotify_sms_args`
-
-* **설명**: 알림 알림 SMS 인수를 필터링합니다.
+*   **설명**: 알림 알림 SMS 인수를 필터링합니다.
 * **파일**: `class/Cosmosfarm_Members_Notification.class.php`
 * **예제**:
-
     ```php
     add_filter('cosmosfarm_members_notifications_subnotify_sms_args', 'my_custom_notifications_sms_args', 10, 2);
     function my_custom_notifications_sms_args($sms_args, $notification_object) {
@@ -940,11 +850,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_login_form_user_logged_in`
-
-* **설명**: 로그인 폼에서 사용자가 로그인되어 있을 때의 레이아웃을 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Page_Builder.class.php`
-* **예제**:
-
+*   **설명**: 로그인 폼에서 사용자가 로그인되어 있을 때의 레이아웃을 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Page_Builder.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_login_form_user_logged_in', 'my_custom_logged_in_layout');
     function my_custom_logged_in_layout($layout) {
@@ -953,11 +861,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_shortcode_users_page_view_allow`
-
-* **설명**: `[cosmosfarm_members_users]` 숏코드 페이지의 보기 허용 여부를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Page_Builder.class.php`
-* **예제**:
-
+*   **설명**: `[cosmosfarm_members_users]` 숏코드 페이지의 보기 허용 여부를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Page_Builder.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_shortcode_users_page_view_allow', 'my_custom_users_page_allow');
     function my_custom_users_page_allow($allow) {
@@ -970,11 +876,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_shortcode_users_page_layout`
-
-* **설명**: `[cosmosfarm_members_users]` 숏코드 페이지의 레이아웃을 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Page_Builder.class.php`
-* **예제**:
-
+*   **설명**: `[cosmosfarm_members_users]` 숏코드 페이지의 레이아웃을 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Page_Builder.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_shortcode_users_page_layout', 'my_custom_users_page_layout', 10, 2);
     function my_custom_users_page_layout($layout, $page_view_allow) {
@@ -986,11 +890,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_closed_site_allow_pages`
-
-* **설명**: 사이트 폐쇄 시 허용될 페이지 목록을 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Security.class.php`
-* **예제**:
-
+*   **설명**: 사이트 폐쇄 시 허용될 페이지 목록을 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Security.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_closed_site_allow_pages', 'my_custom_closed_site_allow_pages');
     function my_custom_closed_site_allow_pages($allow_pages) {
@@ -1000,11 +902,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_header`
-
-* **설명**: 헤더 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 헤더 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_header', 'my_custom_header_template');
     function my_custom_header_template($file_path) {
@@ -1013,11 +913,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_header_menu_items`
-
-* **설명**: 헤더 메뉴 항목을 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 헤더 메뉴 항목을 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_header_menu_items', 'my_custom_header_menu_items');
     function my_custom_header_menu_items($menu_items) {
@@ -1031,11 +929,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_header_menu_current_page`
-
-* **설명**: 헤더 메뉴의 현재 페이지를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 헤더 메뉴의 현재 페이지를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_header_menu_current_page', 'my_custom_header_current_page', 10, 2);
     function my_custom_header_current_page($current_page, $menu_items) {
@@ -1048,11 +944,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_login_redirect_to`
-
-* **설명**: 로그인 후 리다이렉트될 URL을 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 로그인 후 리다이렉트될 URL을 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_login_redirect_to', 'my_custom_login_redirect');
     function my_custom_login_redirect($redirect_to) {
@@ -1061,11 +955,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_login_form`
-
-* **설명**: 로그인 폼 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 로그인 폼 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_login_form', 'my_custom_login_form_template');
     function my_custom_login_form_template($file_path) {
@@ -1074,11 +966,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_change_password_form`
-
-* **설명**: 비밀번호 변경 폼 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 비밀번호 변경 폼 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_change_password_form', 'my_custom_change_password_form_template');
     function my_custom_change_password_form_template($file_path) {
@@ -1087,11 +977,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_account_links`
-
-* **설명**: 계정 링크 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 계정 링크 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_account_links', 'my_custom_account_links_template');
     function my_custom_account_links_template($file_path) {
@@ -1100,11 +988,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_login_timeout_popup`
-
-* **설명**: 로그인 타임아웃 팝업 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 로그인 타임아웃 팝업 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_login_timeout_popup', 'my_custom_login_timeout_popup_template');
     function my_custom_login_timeout_popup_template($file_path) {
@@ -1113,11 +999,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_notifications`
-
-* **설명**: 알림 페이지 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 알림 페이지 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_notifications', 'my_custom_notifications_template');
     function my_custom_notifications_template($file_path) {
@@ -1126,11 +1010,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_notifications_list`
-
-* **설명**: 알림 목록 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 알림 목록 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_notifications_list', 'my_custom_notifications_list_template');
     function my_custom_notifications_list_template($file_path) {
@@ -1139,11 +1021,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_notifications_list_item`
-
-* **설명**: 알림 목록 아이템 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 알림 목록 아이템 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_notifications_list_item', 'my_custom_notifications_list_item_template');
     function my_custom_notifications_list_item_template($file_path) {
@@ -1152,11 +1032,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_messages`
-
-* **설명**: 메시지 페이지 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 메시지 페이지 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_messages', 'my_custom_messages_template');
     function my_custom_messages_template($file_path) {
@@ -1165,11 +1043,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_messages_list`
-
-* **설명**: 메시지 목록 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 메시지 목록 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_messages_list', 'my_custom_messages_list_template');
     function my_custom_messages_list_template($file_path) {
@@ -1178,11 +1054,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_messages_list_item`
-
-* **설명**: 메시지 목록 아이템 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 메시지 목록 아이템 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_messages_list_item', 'my_custom_messages_list_item_template');
     function my_custom_messages_list_item_template($file_path) {
@@ -1191,11 +1065,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_orders`
-
-* **설명**: 주문 페이지 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 주문 페이지 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_orders', 'my_custom_orders_template');
     function my_custom_orders_template($file_path) {
@@ -1204,11 +1076,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_orders_list`
-
-* **설명**: 주문 목록 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 주문 목록 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_orders_list', 'my_custom_orders_list_template');
     function my_custom_orders_list_template($file_path) {
@@ -1217,11 +1087,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_orders_list_item`
-
-* **설명**: 주문 목록 아이템 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 주문 목록 아이템 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_orders_list_item', 'my_custom_orders_list_item_template');
     function my_custom_orders_list_item_template($file_path) {
@@ -1230,11 +1098,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_users`
-
-* **설명**: 사용자 페이지 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 사용자 페이지 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_users', 'my_custom_users_template');
     function my_custom_users_template($file_path) {
@@ -1243,11 +1109,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_users_list`
-
-* **설명**: 사용자 목록 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 사용자 목록 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_users_list', 'my_custom_users_list_template');
     function my_custom_users_list_template($file_path) {
@@ -1256,11 +1120,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_users_list_item`
-
-* **설명**: 사용자 목록 아이템 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 사용자 목록 아이템 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_users_list_item', 'my_custom_users_list_item_template');
     function my_custom_users_list_item_template($file_path) {
@@ -1269,11 +1131,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_user_profile`
-
-* **설명**: 사용자 프로필 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 사용자 프로필 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_user_profile', 'my_custom_user_profile_template');
     function my_custom_user_profile_template($file_path) {
@@ -1282,11 +1142,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_point_list`
-
-* **설명**: 포인트 목록 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 포인트 목록 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_point_list', 'my_custom_point_list_template');
     function my_custom_point_list_template($file_path) {
@@ -1295,11 +1153,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_subscription_product`
-
-* **설명**: 구독 상품 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 구독 상품 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_subscription_product', 'my_custom_subscription_product_template');
     function my_custom_subscription_product_template($file_path) {
@@ -1308,11 +1164,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_subscription_product_title`
-
-* **설명**: 구독 상품 제목 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 구독 상품 제목 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_subscription_product_title', 'my_custom_subscription_product_title_template');
     function my_custom_subscription_product_title_template($file_path) {
@@ -1321,11 +1175,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_subscription_product_price`
-
-* **설명**: 구독 상품 가격 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 구독 상품 가격 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_subscription_product_price', 'my_custom_subscription_product_price_template');
     function my_custom_subscription_product_price_template($file_path) {
@@ -1334,11 +1186,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_subscription_product_type`
-
-* **설명**: 구독 상품 유형 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 구독 상품 유형 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_subscription_product_type', 'my_custom_subscription_product_type_template');
     function my_custom_subscription_product_type_template($file_path) {
@@ -1347,11 +1197,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_subscription_product_first_free`
-
-* **설명**: 구독 상품 첫 달 무료 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 구독 상품 첫 달 무료 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_subscription_product_first_free', 'my_custom_subscription_product_first_free_template');
     function my_custom_subscription_product_first_free_template($file_path) {
@@ -1360,11 +1208,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_subscription_product_button`
-
-* **설명**: 구독 상품 버튼 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 구독 상품 버튼 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_subscription_product_button', 'my_custom_subscription_product_button_template');
     function my_custom_subscription_product_button_template($file_path) {
@@ -1373,11 +1219,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_subscription_product_list`
-
-* **설명**: 구독 상품 목록 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 구독 상품 목록 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_subscription_product_list', 'my_custom_subscription_product_list_template');
     function my_custom_subscription_product_list_template($file_path) {
@@ -1386,11 +1230,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_subscription_product_latest`
-
-* **설명**: 최신 구독 상품 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 최신 구독 상품 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_subscription_product_latest', 'my_custom_subscription_product_latest_template');
     function my_custom_subscription_product_latest_template($file_path) {
@@ -1399,11 +1241,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_subscription_product_single_template`
-
-* **설명**: 단일 구독 상품 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 단일 구독 상품 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_subscription_product_single_template', 'my_custom_subscription_product_single_template');
     function my_custom_subscription_product_single_template($file_path) {
@@ -1412,11 +1252,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_subscription_checkout`
-
-* **설명**: 구독 결제 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 구독 결제 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_subscription_checkout', 'my_custom_subscription_checkout_template');
     function my_custom_subscription_checkout_template($file_path) {
@@ -1425,11 +1263,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_subscription_pay_success_url`
-
-* **설명**: 구독 결제 성공 후 리다이렉트될 URL을 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 구독 결제 성공 후 리다이렉트될 URL을 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_subscription_pay_success_url', 'my_custom_pay_success_url', 10, 2);
     function my_custom_pay_success_url($url, $product) {
@@ -1438,11 +1274,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_subscription_m_redirect_url`
-
-* **설명**: 모바일 결제 리다이렉트 URL을 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 모바일 결제 리다이렉트 URL을 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_subscription_m_redirect_url', 'my_custom_m_redirect_url', 10, 2);
     function my_custom_m_redirect_url($url, $product) {
@@ -1451,11 +1285,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_subscription_checkout_button_display_text`
-
-* **설명**: 구독 결제 버튼의 표시 텍스트를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 구독 결제 버튼의 표시 텍스트를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_subscription_checkout_button_display_text', 'my_custom_checkout_button_text', 10, 4);
     function my_custom_checkout_button_text($text, $product, $is_subscription_first_free, $coupon) {
@@ -1467,11 +1299,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_subscription_iamport_pg_mid`
-
-* **설명**: 아임포트 PG MID를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 아임포트 PG MID를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_subscription_iamport_pg_mid', 'my_custom_iamport_pg_mid', 10, 2);
     function my_custom_iamport_pg_mid($mid, $product) {
@@ -1484,11 +1314,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_subscription_pay_app_scheme`
-
-* **설명**: 구독 결제 앱 스킴을 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 구독 결제 앱 스킴을 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_subscription_pay_app_scheme', 'my_custom_pay_app_scheme', 10, 2);
     function my_custom_pay_app_scheme($scheme, $product) {
@@ -1497,11 +1325,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_subscription_checkout_fields`
-
-* **설명**: 구독 결제 필드 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 구독 결제 필드 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_subscription_checkout_fields', 'my_custom_checkout_fields_template');
     function my_custom_checkout_fields_template($file_path) {
@@ -1510,11 +1336,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_skin_subscription_checkout_field`
-
-* **설명**: 구독 결제 스킨의 필드를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 구독 결제 스킨의 필드를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_skin_subscription_checkout_field', 'my_custom_skin_checkout_field');
     function my_custom_skin_checkout_field($field) {
@@ -1527,11 +1351,9 @@ function my_custom_messages_email_args($args) {
     ```
 
 ### `cosmosfarm_members_template_comments_reviews`
-
-* **설명**: 댓글/리뷰 템플릿 파일 경로를 필터링합니다.
-* **파일**: `class/Cosmosfarm_Members_Skin.class.php`
-* **예제**:
-
+*   **설명**: 댓글/리뷰 템플릿 파일 경로를 필터링합니다.
+*   **파일**: `class/Cosmosfarm_Members_Skin.class.php`
+*   **예제**:
     ```php
     add_filter('cosmosfarm_members_template_comments_reviews', 'my_custom_comments_reviews_template');
     function my_custom_comments_reviews_template($file_path) {
