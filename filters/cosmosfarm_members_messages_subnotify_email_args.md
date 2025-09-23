@@ -7,13 +7,13 @@
   - `$args (array)`: 이메일 발송에 사용될 인수 배열. 'to' (수신자 이메일), 'subject' (제목), 'message' (내용) 등의 키를 포함합니다.
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_messages_subnotify_email_args', 'my_custom_messages_email_args');
-function my_custom_messages_email_args($args) {
+  ```php
+  add_filter('cosmosfarm_members_messages_subnotify_email_args', 'my_custom_messages_email_args');
+  function my_custom_messages_email_args($args) {
     $args['subject'] = '[새 메시지] ' . $args['subject'];
     return $args;
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 이메일 인수 배열을 반환해야 합니다. 'to', 'subject', 'message' 키를 포함하는 배열 구조를 유지해야 합니다.
 - **관련 훅**: `cosmosfarm_members_messages_subnotify_sms_args`, `cosmosfarm_members_messages_subnotify_alimtalk_args`

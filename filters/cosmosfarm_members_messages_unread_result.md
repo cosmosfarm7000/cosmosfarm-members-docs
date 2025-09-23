@@ -7,15 +7,15 @@
   - `$result (object)`: 메시지 안 읽음 처리 결과 객체. success (bool), message (string) 등의 속성을 포함합니다.
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_messages_unread_result', 'my_custom_messages_unread_result');
-function my_custom_messages_unread_result($result) {
+  ```php
+  add_filter('cosmosfarm_members_messages_unread_result', 'my_custom_messages_unread_result');
+  function my_custom_messages_unread_result($result) {
     if ($result->success) {
         error_log('메시지 안 읽음 처리 성공!');
     }
     return $result;
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 결과 객체를 반환해야 합니다. 결과 객체의 구조를 변경할 때는 success와 message 속성을 유지하는 것이 좋습니다.
 - **관련 훅**: `cosmosfarm_members_messages_read_result`, `cosmosfarm_members_messages_delete_result`

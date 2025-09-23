@@ -8,13 +8,13 @@
   - `$notification_object (Cosmosfarm_Members_Notification)`: 알림 객체. 알림 내용, 수신자 등의 정보를 포함합니다.
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_notifications_subnotify_alimtalk_args', 'my_custom_notifications_alimtalk_args', 10, 2);
-function my_custom_notifications_alimtalk_args($alimtalk_args, $notification_object) {
+  ```php
+  add_filter('cosmosfarm_members_notifications_subnotify_alimtalk_args', 'my_custom_notifications_alimtalk_args', 10, 2);
+  function my_custom_notifications_alimtalk_args($alimtalk_args, $notification_object) {
     $alimtalk_args['templateCode'] = 'MY_CUSTOM_NOTIFICATION_TEMPLATE';
     return $alimtalk_args;
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 알림톡 인수 배열을 반환해야 합니다. templateCode와 필요한 파라미터를 올바르게 설정해야 합니다.
 - **관련 훅**: `cosmosfarm_members_notifications_subnotify_email_args`, `cosmosfarm_members_notifications_subnotify_sms_args`

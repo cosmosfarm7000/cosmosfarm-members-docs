@@ -10,15 +10,15 @@
   - `$coupon (object)`: 적용된 쿠폰 객체 (있는 경우).
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_subscription_checkout_button_display_text', 'my_custom_checkout_button_text', 10, 4);
-function my_custom_checkout_button_text($text, $product, $is_subscription_first_free, $coupon) {
+  ```php
+  add_filter('cosmosfarm_members_subscription_checkout_button_display_text', 'my_custom_checkout_button_text', 10, 4);
+  function my_custom_checkout_button_text($text, $product, $is_subscription_first_free, $coupon) {
     if ($is_subscription_first_free) {
         return '첫 달 무료로 시작하기';
     }
     return '지금 결제하기';
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 문자열을 반환해야 합니다. 반환된 텍스트는 결제 버튼에 표시됩니다.
 - **관련 훅**: `cosmosfarm_members_subscription_pay_success_url`, `cosmosfarm_members_subscription_m_redirect_url`

@@ -10,7 +10,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_template_login_timeout_popup', 'my_custom_login_timeout_popup_template');
+  add_filter('cosmosfarm_members_template_login_timeout_popup', 'my_custom_login_timeout_popup_template');
     function my_custom_login_timeout_popup_template($file_path) {
         return get_stylesheet_directory() . '/cosmosfarm-members/login-timeout-popup.php';
     }

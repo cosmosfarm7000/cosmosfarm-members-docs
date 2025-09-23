@@ -8,7 +8,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_template_point_list', 'my_custom_point_list_template');
+  add_filter('cosmosfarm_members_template_point_list', 'my_custom_point_list_template');
     function my_custom_point_list_template($file_path) {
         return get_stylesheet_directory() . '/cosmosfarm-members/point-list.php';
     }

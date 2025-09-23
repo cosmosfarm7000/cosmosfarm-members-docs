@@ -8,7 +8,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_template_notifications', 'my_custom_notifications_template');
+  add_filter('cosmosfarm_members_template_notifications', 'my_custom_notifications_template');
     function my_custom_notifications_template($file_path) {
         return get_stylesheet_directory() . '/cosmosfarm-members/notifications.php';
     }

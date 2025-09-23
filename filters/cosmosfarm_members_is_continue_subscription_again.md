@@ -9,16 +9,16 @@
   - `$product (Cosmosfarm_Members_Subscription_Product)`: 재결제 대상 상품 객체. 상품 가격, 유형 등의 정보를 포함합니다.
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_is_continue_subscription_again', 'my_custom_continue_subscription_again', 10, 3);
-function my_custom_continue_subscription_again($is_continue, $old_order, $product) {
+  ```php
+  add_filter('cosmosfarm_members_is_continue_subscription_again', 'my_custom_continue_subscription_again', 10, 3);
+  function my_custom_continue_subscription_again($is_continue, $old_order, $product) {
     // 특정 조건에서 재결제 중단
     if ($old_order->get_status() === 'pending') {
         return false; // 이전 주문이 보류 중이면 재결제 중단
     }
     return $is_continue;
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 불리언 값을 반환해야 합니다. false를 반환하면 재결제 프로세스가 중단됩니다.
 - **관련 훅**: `cosmosfarm_members_subscription_again_price`, `cosmosfarm_members_subscription_again_point_to_apply`

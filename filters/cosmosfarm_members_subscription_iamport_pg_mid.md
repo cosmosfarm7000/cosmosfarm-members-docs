@@ -8,16 +8,16 @@
   - `$product (Cosmosfarm_Members_Subscription_Product)`: 구독 상품 객체.
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_subscription_iamport_pg_mid', 'my_custom_iamport_pg_mid', 10, 2);
-function my_custom_iamport_pg_mid($mid, $product) {
+  ```php
+  add_filter('cosmosfarm_members_subscription_iamport_pg_mid', 'my_custom_iamport_pg_mid', 10, 2);
+  function my_custom_iamport_pg_mid($mid, $product) {
     // 특정 상품에 대한 다른 MID 사용
     if ($product->ID() === 789) {
         return 'my_special_mid';
     }
     return $mid;
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 문자열(MID 값)을 반환해야 합니다. 잘못된 MID를 반환하면 결제에 실패할 수 있습니다.
 - **관련 훅**: `cosmosfarm_members_subscription_pay_app_scheme`

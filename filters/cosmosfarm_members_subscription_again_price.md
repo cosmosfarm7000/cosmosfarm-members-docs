@@ -9,13 +9,13 @@
   - `$product (Cosmosfarm_Members_Subscription_Product)`: 구독 상품 객체.
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_subscription_again_price', 'my_custom_again_price', 10, 3);
-function my_custom_again_price($again_price, $old_order, $product) {
+  ```php
+  add_filter('cosmosfarm_members_subscription_again_price', 'my_custom_again_price', 10, 3);
+  function my_custom_again_price($again_price, $old_order, $product) {
     // 재결제 시 5% 할인 적용
     return $again_price * 0.95;
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 숫자(가격)를 반환해야 합니다. 반환된 값은 재결제 시 실제 청구될 금액으로 적용됩니다.
 - **관련 훅**: `cosmosfarm_members_subscription_again_point_to_apply`, `cosmosfarm_members_subscription_again_failure_email_args`

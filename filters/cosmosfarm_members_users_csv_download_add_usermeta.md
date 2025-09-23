@@ -8,7 +8,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_users_csv_download_add_usermeta', 'my_custom_users_csv_usermeta');
+  add_filter('cosmosfarm_members_users_csv_download_add_usermeta', 'my_custom_users_csv_usermeta');
     function my_custom_users_csv_usermeta($add_usermeta) {
         $add_usermeta[] = 'billing_address';
         return $add_usermeta;

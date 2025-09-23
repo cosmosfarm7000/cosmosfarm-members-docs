@@ -9,7 +9,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_users_csv_download_row_data', 'my_custom_users_csv_row_data', 10, 2);
+  add_filter('cosmosfarm_members_users_csv_download_row_data', 'my_custom_users_csv_row_data', 10, 2);
     function my_custom_users_csv_row_data($row_data, $user) {
         $row_data['custom_user_status'] = 'Active';
         return $row_data;

@@ -8,13 +8,13 @@
   - `$notification_object (Cosmosfarm_Members_Notification)`: 알림 객체. 알림 내용, 수신자 등의 정보를 포함합니다.
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_notifications_subnotify_sms_args', 'my_custom_notifications_sms_args', 10, 2);
-function my_custom_notifications_sms_args($sms_args, $notification_object) {
+  ```php
+  add_filter('cosmosfarm_members_notifications_subnotify_sms_args', 'my_custom_notifications_sms_args', 10, 2);
+  function my_custom_notifications_sms_args($sms_args, $notification_object) {
     $sms_args['content'] = '[새 알림] ' . $sms_args['content'];
     return $sms_args;
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 SMS 인수 배열을 반환해야 합니다. 'content' 키를 포함하는 배열 구조를 유지해야 합니다.
 - **관련 훅**: `cosmosfarm_members_notifications_subnotify_email_args`, `cosmosfarm_members_notifications_subnotify_alimtalk_args`

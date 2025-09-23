@@ -10,12 +10,12 @@
   - `$builder (object)`: 페이지 빌더 객체. 레이아웃과 관련된 정보를 포함합니다.
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_kboard_notify_text', 'my_custom_kboard_notify_text', 10, 4);
-function my_custom_kboard_notify_text($text, $content, $board, $builder) {
+  ```php
+  add_filter('cosmosfarm_members_kboard_notify_text', 'my_custom_kboard_notify_text', 10, 4);
+  function my_custom_kboard_notify_text($text, $content, $board, $builder) {
     return '새로운 댓글 알림 받기';
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 문자열을 반환해야 합니다. 반환된 텍스트는 알림 신청 UI에 표시됩니다.
 - **관련 훅**: `cosmosfarm_members_comments_notify_text`

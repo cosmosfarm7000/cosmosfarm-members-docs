@@ -8,12 +8,12 @@
   - `$product (Cosmosfarm_Members_Subscription_Product)`: 구독 상품 객체.
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_subscription_pay_app_scheme', 'my_custom_pay_app_scheme', 10, 2);
-function my_custom_pay_app_scheme($scheme, $product) {
+  ```php
+  add_filter('cosmosfarm_members_subscription_pay_app_scheme', 'my_custom_pay_app_scheme', 10, 2);
+  function my_custom_pay_app_scheme($scheme, $product) {
     return 'mycustomapp://payment';
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 문자열(앱 스킴)을 반환해야 합니다. 모바일 앱에서 결제 후 돌아올 때 사용되는 URL 스킴입니다.
 - **관련 훅**: `cosmosfarm_members_subscription_iamport_pg_mid`

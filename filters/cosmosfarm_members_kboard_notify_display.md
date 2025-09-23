@@ -10,16 +10,16 @@
   - `$builder (object)`: 페이지 빌더 객체. 레이아웃과 관련된 정보를 포함합니다.
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_kboard_notify_display', 'my_custom_kboard_notify_display', 10, 4);
-function my_custom_kboard_notify_display($display, $content, $board, $builder) {
+  ```php
+  add_filter('cosmosfarm_members_kboard_notify_display', 'my_custom_kboard_notify_display', 10, 4);
+  function my_custom_kboard_notify_display($display, $content, $board, $builder) {
     // 특정 게시판(ID: 1)에서는 알림 비활성화
     if ($board->id === '1') {
         return false;
     }
     return $display;
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 불리언 값을 반환해야 합니다. false를 반환하면 해당 게시물/댓글에 대한 알림이 표시되지 않습니다.
 - **관련 훅**: `cosmosfarm_members_comments_notify_display`

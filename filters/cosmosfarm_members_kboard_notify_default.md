@@ -8,16 +8,16 @@
   - `$board (object)`: KBoard 게시판 객체. 게시판 ID, 설정 등의 정보를 포함합니다.
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_kboard_notify_default', 'my_custom_kboard_notify_default', 10, 2);
-function my_custom_kboard_notify_default($default, $board) {
+  ```php
+  add_filter('cosmosfarm_members_kboard_notify_default', 'my_custom_kboard_notify_default', 10, 2);
+  function my_custom_kboard_notify_default($default, $board) {
     // 특정 게시판에서는 알림을 기본적으로 비활성화
     if ($board->id === '123') {
         return false;
     }
     return $default;
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 불리언 값을 반환해야 합니다. 이 값은 해당 게시판의 알림 기본 설정으로 사용됩니다.
 - **관련 훅**: `cosmosfarm_members_comments_notify_default`

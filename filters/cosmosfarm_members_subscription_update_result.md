@@ -8,13 +8,13 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_subscription_update_result', 'my_custom_subscription_update_result');
-function my_custom_subscription_update_result($result) {
+  add_filter('cosmosfarm_members_subscription_update_result', 'my_custom_subscription_update_result');
+  function my_custom_subscription_update_result($result) {
     if (!$result->success) {
         error_log('구독 업데이트 실패: ' . $result->message);
     }
     return $result;
-}
+  }
   ```
 
 - **주의 사항**: 필터 함수는 반드시 값을 반환해야 합니다.

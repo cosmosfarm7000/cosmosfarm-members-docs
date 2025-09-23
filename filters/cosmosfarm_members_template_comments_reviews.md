@@ -8,7 +8,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_template_comments_reviews', 'my_custom_comments_reviews_template');
+  add_filter('cosmosfarm_members_template_comments_reviews', 'my_custom_comments_reviews_template');
     function my_custom_comments_reviews_template($file_path) {
         return get_stylesheet_directory() . '/cosmosfarm-members/comments-reviews.php';
     }

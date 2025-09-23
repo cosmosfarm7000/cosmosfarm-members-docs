@@ -9,7 +9,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_template_account_links', 'my_custom_account_links_template');
+  add_filter('cosmosfarm_members_template_account_links', 'my_custom_account_links_template');
     function my_custom_account_links_template($file_path) {
         return get_stylesheet_directory() . '/cosmosfarm-members/account-links.php';
     }

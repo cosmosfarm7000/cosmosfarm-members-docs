@@ -12,7 +12,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_template_social_buttons', 'my_custom_social_buttons_template');
+  add_filter('cosmosfarm_members_template_social_buttons', 'my_custom_social_buttons_template');
     function my_custom_social_buttons_template($file_path) {
         // 사용자 정의 소셜 버튼 템플릿 경로 반환
         return get_stylesheet_directory() . '/cosmosfarm-members/social-buttons.php';

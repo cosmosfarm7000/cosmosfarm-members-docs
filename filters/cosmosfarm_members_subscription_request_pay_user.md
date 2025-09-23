@@ -11,12 +11,12 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_subscription_request_pay_user', 'my_custom_pay_request_user', 10, 4);
-function my_custom_pay_request_user($user, $product, $meta_input, $custom_data) {
+  add_filter('cosmosfarm_members_subscription_request_pay_user', 'my_custom_pay_request_user', 10, 4);
+  function my_custom_pay_request_user($user, $product, $meta_input, $custom_data) {
     // 결제 요청 시 사용자 정보 변경
     // $user->user_email = 'new_email@example.com';
     return $user;
-}
+  }
   ```
 
 - **주의 사항**: 필터 함수는 반드시 값을 반환해야 합니다.

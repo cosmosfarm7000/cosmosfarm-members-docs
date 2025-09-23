@@ -7,12 +7,12 @@
   - `$layout (string)`: 로그인된 사용자에게 표시될 HTML 레이아웃. 기본적으로 로그인 상태를 알리는 메시지나 로그아웃 링크를 포함합니다.
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_login_form_user_logged_in', 'my_custom_logged_in_layout');
-function my_custom_logged_in_layout($layout) {
+  ```php
+  add_filter('cosmosfarm_members_login_form_user_logged_in', 'my_custom_logged_in_layout');
+  function my_custom_logged_in_layout($layout) {
     return '<p>이미 로그인되어 있습니다. <a href="' . wp_logout_url() . '">로그아웃</a></p>';
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 HTML 문자열을 반환해야 합니다. 반환된 콘텐츠는 로그인 페이지에서 로그인된 사용자에게 표시됩니다.
 - **관련 훅**: `cosmosfarm_members_template_login_form`

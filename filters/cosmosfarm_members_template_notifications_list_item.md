@@ -10,7 +10,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_template_notifications_list_item', 'my_custom_notifications_list_item_template');
+  add_filter('cosmosfarm_members_template_notifications_list_item', 'my_custom_notifications_list_item_template');
     function my_custom_notifications_list_item_template($file_path) {
         return get_stylesheet_directory() . '/cosmosfarm-members/notifications-list-item.php';
     }

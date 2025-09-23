@@ -8,7 +8,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_template_header', 'my_custom_header_template');
+  add_filter('cosmosfarm_members_template_header', 'my_custom_header_template');
     function my_custom_header_template($file_path) {
         return get_stylesheet_directory() . '/cosmosfarm-members/header.php';
     }

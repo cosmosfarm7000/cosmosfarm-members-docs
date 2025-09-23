@@ -10,7 +10,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_subscription_send_sms_again_message', 'my_custom_sms_again_message', 10, 3);
+  add_filter('cosmosfarm_members_subscription_send_sms_again_message', 'my_custom_sms_again_message', 10, 3);
     function my_custom_sms_again_message($sms, $order, $product) {
         $sms['content'] = '[재결제 알림] ' . $product->name() . ' 상품 재결제가 완료되었습니다.';
         return $sms;

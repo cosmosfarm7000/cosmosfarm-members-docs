@@ -9,7 +9,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_template_subscription_product_latest', 'my_custom_subscription_product_latest_template');
+  add_filter('cosmosfarm_members_template_subscription_product_latest', 'my_custom_subscription_product_latest_template');
     function my_custom_subscription_product_latest_template($file_path) {
         return get_stylesheet_directory() . '/cosmosfarm-members/subscription-product-latest.php';
     }

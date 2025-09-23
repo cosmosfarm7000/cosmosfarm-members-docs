@@ -9,7 +9,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_header_menu_current_page', 'my_custom_header_current_page', 10, 2);
+  add_filter('cosmosfarm_members_header_menu_current_page', 'my_custom_header_current_page', 10, 2);
     function my_custom_header_current_page($current_page, $menu_items) {
         // 특정 URL에 있을 때 'my-custom-link'를 현재 페이지로 설정
         if (strpos($_SERVER['REQUEST_URI'], '/custom-page/') !== false) {

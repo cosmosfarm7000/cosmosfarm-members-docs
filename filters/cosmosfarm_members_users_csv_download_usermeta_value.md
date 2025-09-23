@@ -10,7 +10,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_users_csv_download_usermeta_value', 'my_custom_users_csv_usermeta_value', 10, 3);
+  add_filter('cosmosfarm_members_users_csv_download_usermeta_value', 'my_custom_users_csv_usermeta_value', 10, 3);
     function my_custom_users_csv_usermeta_value($meta_value, $meta_key, $user) {
         if ($meta_key === 'billing_address') {
             return get_user_meta($user->ID, 'billing_address_1', true) . ', ' . get_user_meta($user->ID, 'billing_city', true);

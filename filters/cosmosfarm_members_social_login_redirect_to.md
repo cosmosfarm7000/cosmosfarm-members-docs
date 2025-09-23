@@ -10,12 +10,12 @@
   - `$random_password (string)`: 자동 생성된 임시 비밀번호 (새 사용자인 경우).
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_social_login_redirect_to', 'my_custom_social_login_redirect', 10, 4);
-function my_custom_social_login_redirect($redirect_to, $profile, $user, $random_password) {
+  ```php
+  add_filter('cosmosfarm_members_social_login_redirect_to', 'my_custom_social_login_redirect', 10, 4);
+  function my_custom_social_login_redirect($redirect_to, $profile, $user, $random_password) {
     return home_url('/my-account/');
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 유효한 URL 문자열을 반환해야 합니다. 반환된 URL은 소셜 로그인 성공 후 사용자를 리다이렉트하는 데 사용됩니다.
 - **관련 훅**: `cosmosfarm_members_login_redirect_to`

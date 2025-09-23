@@ -10,17 +10,17 @@
     - `'title' (string)`: 메뉴 항목의 표시 텍스트
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_header_menu_items', 'my_custom_header_menu_items');
-function my_custom_header_menu_items($menu_items) {
+  ```php
+  add_filter('cosmosfarm_members_header_menu_items', 'my_custom_header_menu_items');
+  function my_custom_header_menu_items($menu_items) {
     $menu_items['my-custom-link'] = array(
         'title' => 'Custom Link',
         'url' => '/custom-page/',
         'current' => false,
     );
     return $menu_items;
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 값을 반환해야 합니다. 반환된 메뉴 항목 배열은 헤더 메뉴 렌더링에 사용됩니다.
 - **관련 훅**: `cosmosfarm_members_header_menu_current_page` (현재 페이지 결정)

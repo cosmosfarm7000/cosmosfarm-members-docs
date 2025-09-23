@@ -10,13 +10,13 @@
   - `$board (object)`: KBoard 게시판 객체. 게시판 설정과 정보를 포함합니다.
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_kboard_notify_comments_insert', 'my_custom_kboard_notify_comments_insert', 10, 4);
-function my_custom_kboard_notify_comments_insert($notification, $comment_uid, $content_uid, $board) {
+  ```php
+  add_filter('cosmosfarm_members_kboard_notify_comments_insert', 'my_custom_kboard_notify_comments_insert', 10, 4);
+  function my_custom_kboard_notify_comments_insert($notification, $comment_uid, $content_uid, $board) {
     $notification['custom_data'] = 'comment_inserted';
     return $notification;
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 수정된 알림 데이터 배열을 반환해야 합니다. 알림 데이터의 구조를 변경할 때는 기존 키를 유지하는 것이 좋습니다.
 - **관련 훅**: `cosmosfarm_members_kboard_notify_document_insert`, `cosmosfarm_members_comments_notify_insert`

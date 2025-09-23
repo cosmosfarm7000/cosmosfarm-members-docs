@@ -9,7 +9,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_use_login_timeout', 'my_custom_login_timeout_setting');
+  add_filter('cosmosfarm_members_use_login_timeout', 'my_custom_login_timeout_setting');
     function my_custom_login_timeout_setting($use_login_timeout) {
         return false; // 로그인 타임아웃 기능 비활성화
     }

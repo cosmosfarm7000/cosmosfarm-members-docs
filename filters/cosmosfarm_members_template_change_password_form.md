@@ -9,7 +9,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_template_change_password_form', 'my_custom_change_password_form_template');
+  add_filter('cosmosfarm_members_template_change_password_form', 'my_custom_change_password_form_template');
     function my_custom_change_password_form_template($file_path) {
         return get_stylesheet_directory() . '/cosmosfarm-members/change-password-form.php';
     }

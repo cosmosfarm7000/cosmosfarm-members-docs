@@ -8,12 +8,12 @@
   - `$product (Cosmosfarm_Members_Subscription_Product)`: 구독 상품 객체.
 - **예제 코드**:
 
-```php
-add_filter('cosmosfarm_members_subscription_m_redirect_url', 'my_custom_m_redirect_url', 10, 2);
-function my_custom_m_redirect_url($url, $product) {
+  ```php
+  add_filter('cosmosfarm_members_subscription_m_redirect_url', 'my_custom_m_redirect_url', 10, 2);
+  function my_custom_m_redirect_url($url, $product) {
     return home_url('/mobile-payment-redirect/');
-}
-```
+  }
+  ```
 
 - **주의 사항**: 필터 함수는 반드시 유효한 URL 문자열을 반환해야 합니다. 모바일 앱이나 웹뷰에서 결제 완료 후 이동할 페이지의 URL입니다.
 - **관련 훅**: `cosmosfarm_members_subscription_pay_success_url`

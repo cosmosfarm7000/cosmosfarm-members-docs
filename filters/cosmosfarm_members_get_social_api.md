@@ -9,7 +9,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_get_social_api', 'my_custom_social_api_object', 10, 2);
+  add_filter('cosmosfarm_members_get_social_api', 'my_custom_social_api_object', 10, 2);
     function my_custom_social_api_object($api, $channel) {
         // 특정 채널에 대한 사용자 정의 API 객체 반환
         if ($channel === 'my_custom_social') {

@@ -8,7 +8,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_users_csv_download_columns', 'my_custom_users_csv_columns');
+  add_filter('cosmosfarm_members_users_csv_download_columns', 'my_custom_users_csv_columns');
     function my_custom_users_csv_columns($columns) {
         $columns['user_phone'] = 'Phone Number';
         return $columns;

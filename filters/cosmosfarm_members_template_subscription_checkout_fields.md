@@ -9,7 +9,7 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_template_subscription_checkout_fields', 'my_custom_checkout_fields_template');
+  add_filter('cosmosfarm_members_template_subscription_checkout_fields', 'my_custom_checkout_fields_template');
     function my_custom_checkout_fields_template($file_path) {
         return get_stylesheet_directory() . '/cosmosfarm-members/subscription-checkout-fields.php';
     }
