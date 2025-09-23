@@ -7,13 +7,14 @@
   - `$order (Cosmosfarm_Members_Subscription_Order)`: 현재 편집 중인 구독 주문 객체입니다. `ID()`로 주문 포스트 ID를 얻고, `user()`로 연결된 `WP_User` 객체와 그 역할 정보를 조회할 수 있습니다. 금액 관련 메서드(`first_price()`, `next_price()`, `real_price()`, `pay_count()` 등)와 구독 상태 메타(`subscription_type()`, `subscription_role()`, `subscription_next()` 등), 그리고 매직 프로퍼티(`$order->buyer_name`, `$order->buyer_email`, `$order->buyer_tel`)도 활용할 수 있습니다.
   - `$product (Cosmosfarm_Members_Subscription_Product)`: 주문과 연결된 구독 상품 객체입니다. `product_id()`로 상품 포스트 ID를 얻고, `fields()`로 등록된 체크아웃 커스텀 필드 구성을 확인할 수 있습니다. 또한 `price()`, `subscription_first_free()`, `subscription_type_format()` 같은 메서드로 반복 결제 정책을 분석하거나, `option_title()`, `option_fields()`로 옵션 구성을 확인할 수 있습니다.
 - **예제 코드**:
+
   ```php
   // 주문 상세 화면 상단에 내부 메모 필드를 추가한다.
   add_action('cosmosfarm_members_before_subscription_order_setting_html', function ($order, $product) {
       if (!current_user_can('manage_cosmosfarm_members')) {
           return; // 권한 확인
       }
-
+  
       $memo_value = get_post_meta($order->ID(), '_internal_manager_memo', true);
       ?>
       <table class="form-table">
@@ -29,7 +30,7 @@
       </table>
       <?php
   }, 10, 2);
-
+  
   // 저장 로직은 주문 저장 훅에서 처리한다.
   add_action('cosmosfarm_members_before_subscription_order_setting', function ($order) {
       if (!isset($_POST['internal_manager_memo'])) {

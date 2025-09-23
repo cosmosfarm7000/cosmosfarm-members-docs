@@ -6,13 +6,14 @@
 - **인자 정보**:
   - `$product (Cosmosfarm_Members_Subscription_Product)`: 결제한 구독 상품 객체입니다. `ID()`, `price()`, `title()`, `subscription_type()` 등을 사용해 추적 이벤트에 필요한 상품 정보를 가져올 수 있습니다.
 - **예제 코드**:
+
   ```php
   // 결제 완료 페이지에서 사용자 정의 GTM 이벤트를 추가한다.
   add_action('cosmosfarm_members_print_purchase_tracking_code', function ($product) {
       if (!$product->ID()) {
           return;
       }
-
+  
       ?>
       <script>
       window.dataLayer = window.dataLayer || [];

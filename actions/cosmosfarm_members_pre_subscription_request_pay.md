@@ -8,13 +8,14 @@
   - `$meta_input (array|null)`: 결제 폼에서 전달된 메타 데이터 배열입니다. 일부 경로에서는 `null`일 수 있으므로 사용 전 null 여부를 확인하세요.
   - `$custom_data (array|null)`: 사용자 정의 데이터(예: 추가 필드, 쿠폰, 주소 정보). 마찬가지로 경로에 따라 `null`일 수 있습니다.
 - **예제 코드**:
+
   ```php
   // 결제 전 쿠폰 유효성을 검증한다.
   add_action('cosmosfarm_members_pre_subscription_request_pay', function ($product, $meta_input, $custom_data) {
       if (!$product->ID()) {
           wp_send_json(array('result' => 'error', 'message' => __('Product not found.', 'textdomain')));
       }
-
+  
       $coupon_code = isset($custom_data['coupon_code']) ? sanitize_text_field($custom_data['coupon_code']) : '';
       if ($coupon_code && !my_custom_coupon_is_valid($coupon_code, $product->ID())) {
           wp_send_json(array('result' => 'error', 'message' => __('Coupon is invalid or expired.', 'textdomain')));

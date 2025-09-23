@@ -8,6 +8,7 @@
   - `$product (Cosmosfarm_Members_Subscription_Product)`: 주문과 연결된 구독 상품 객체입니다. `title()`, `price()`, `subscription_type()`, `earn_points()` 등 상품 정책 정보를 제공합니다.
   - `$custom_data (array)`: 결제 요청 시 제출된 `$_POST` 데이터가 그대로 전달됩니다. 결제 수단, 청구서 정보, 커스텀 체크아웃 필드를 참고할 수 있습니다.
 - **예제 코드**:
+
   ```php
   // 결제 완료 후 외부 ERP 시스템에 주문 정보를 전달한다.
   add_action('cosmosfarm_members_subscription_request_pay', function ($order, $product, $custom_data) {
@@ -19,7 +20,7 @@
           'price'           => $order->real_price(),
           'payment_gateway' => isset($custom_data['builtin_pg']) ? sanitize_text_field($custom_data['builtin_pg']) : '',
       );
-
+  
       wp_remote_post('https://erp.example.com/api/subscription', array(
           'timeout' => 5,
           'headers' => array('Content-Type' => 'application/json'),

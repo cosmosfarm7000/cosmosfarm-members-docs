@@ -9,16 +9,17 @@
   - `$user (WP_User)`: 로그인 또는 생성된 워드프레스 사용자 객체.
   - `$random_password (string)`: 로그인 처리용으로 생성된 임시 비밀번호. 필요 시 알림 메일 등에 활용할 수 있습니다.
 - **예제 코드**:
+
   ```php
   // 콜백 성공 시 감사 로그와 커스텀 메타를 기록한다.
   add_action('cosmosfarm_members_social_login_callback', function ($channel, $profile, $user, $random_password) {
       if (!$user instanceof WP_User) {
           return;
       }
-
+  
       update_user_meta($user->ID, '_last_social_login_channel', $channel);
       update_user_meta($user->ID, '_last_social_login_at', current_time('mysql'));
-
+  
       error_log(sprintf('[Social Login] %s (%d) logged in via %s', $user->user_login, $user->ID, $channel));
   }, 10, 4);
   ```

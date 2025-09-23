@@ -6,6 +6,7 @@
 - **인자 정보**:
   - *(없음)* 추가 인자를 전달하지 않습니다.
 - **예제 코드**:
+
   ```php
   // 업로드 전에 첨부된 CSV를 백업 폴더에 저장한다.
   add_action('cosmosfarm_members_pre_users_csv_upload', function () {

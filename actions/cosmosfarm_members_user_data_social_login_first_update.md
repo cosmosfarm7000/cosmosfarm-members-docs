@@ -6,24 +6,25 @@
 - **인자 정보**:
   - `$current_user (WP_User)`: 현재 저장 중인 사용자 객체입니다. `ID`, `user_email`, `user_login`, `roles` 등 기본 속성과 `get_user_meta()`를 조합해 추가 데이터를 가져올 수 있습니다. WP_User는 참조로 전달되므로, `set_role()` 같은 메서드를 호출하면 즉시 반영됩니다.
 - **예제 코드**:
+
   ```php
   // 소셜 로그인 사용자가 필수 정보를 처음 저장했을 때 환영 이메일을 발송한다.
   add_action('cosmosfarm_members_user_data_social_login_first_update', function ($current_user) {
       if (!$current_user instanceof WP_User) {
           return;
       }
-
+  
       $email = $current_user->user_email;
       if (!$email) {
           return;
       }
-
+  
       wp_mail(
           $email,
           __('Welcome to our premium membership!', 'textdomain'),
           sprintf(__('Hi %s, your membership profile is now complete. Enjoy premium benefits!', 'textdomain'), $current_user->display_name)
       );
-
+  
       update_user_meta($current_user->ID, '_welcome_mail_sent', current_time('mysql'));
   });
   ```

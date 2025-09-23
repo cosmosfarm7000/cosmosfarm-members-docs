@@ -6,6 +6,7 @@
 - **인자 정보**:
   - *(없음)* 추가 인자를 전달하지 않습니다. 현재 사용자 정보는 `get_current_user_id()`로 조회할 수 있습니다.
 - **예제 코드**:
+
   ```php
   // 탈퇴 전에 데이터를 백업하고 감사 로그를 남긴다.
   add_action('cosmosfarm_members_delete_account', function () {
@@ -13,13 +14,13 @@
       if (!$user_id) {
           return;
       }
-
+  
       $user = get_userdata($user_id);
       $backup_dir = WP_CONTENT_DIR . '/uploads/account-backup';
       wp_mkdir_p($backup_dir);
       $filename = trailingslashit($backup_dir) . 'user-' . $user_id . '-' . time() . '.json';
       file_put_contents($filename, wp_json_encode($user));
-
+  
       error_log(sprintf('[Delete Account] %s (%d) requested account deletion.', $user->user_login, $user_id));
   });
   ```

@@ -7,6 +7,7 @@
   - `$args (array)`: 메일 발송에 사용될 인자 배열. `to`, `subject`, `message`, `headers`, `call_to_actions` 등이 포함됩니다.
   - `$mail (Cosmosfarm_Members_Mail)`: 메일 클래스 인스턴스. 템플릿 렌더링 시 참조되는 `call_to_actions` 속성을 조정할 수 있습니다.
 - **예제 코드**:
+
   ```php
   // 메일 발송 전에 CTA 버튼을 동적으로 추가한다.
   add_action('cosmosfarm_members_mail_send', function ($args, $mail) {
@@ -14,7 +15,7 @@
           'name' => __('Manage Subscription', 'textdomain'),
           'url'  => home_url('/membership/manage')
       );
-
+  
       add_filter('wp_mail', function ($mail_args) {
           $mail_args['headers'][] = 'Bcc: audit@example.com';
           remove_filter('wp_mail', __FUNCTION__);

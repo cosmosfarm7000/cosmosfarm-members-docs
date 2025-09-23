@@ -7,13 +7,14 @@
   - `$order (Cosmosfarm_Members_Subscription_Order)`: 현재 편집 중인 주문 객체입니다. `ID()`로 포스트 ID, `user()`로 연결된 `WP_User`를 얻을 수 있고, `pay_count()`, `price()`, `next_price()`, `real_price()` 같은 금액 정보와 `subscription_type()`, `subscription_next()`, `subscription_next_format()` 등 구독 상태 메타를 조회할 수 있습니다. 매직 프로퍼티(`$order->buyer_name`, `$order->buyer_email`, `$order->buyer_tel`)는 주문자 정보를 즉시 반환합니다. `set_subscription_role()`, `set_next_price()` 등 세터도 제공하므로 값을 변경할 때는 후속 훅이나 저장 로직과 충돌하지 않도록 주의합니다.
   - `$product (Cosmosfarm_Members_Subscription_Product)`: 주문과 연결된 구독 상품 객체입니다. `product_id()`로 상품 포스트 ID를 확인하고, `price()`, `subscription_first_free()`, `subscription_type()`, `subscription_type_format()`으로 반복 결제 설정을 확인합니다. `fields()`·`option_fields()`는 체크아웃 커스텀 필드 구성을, `option_title()`/`option_subtitle()`은 옵션 라벨 정보를 제공합니다.
 - **예제 코드**:
+
   ```php
   // 구독 주문 편집 시 내부 검증 및 관리자 알림을 추가한다.
   add_action('cosmosfarm_members_before_subscription_order_setting', function ($order, $product) {
       if (!current_user_can('manage_cosmosfarm_members_order')) {
           return;
       }
-
+  
       // 만료 처리 상태인데 잔액이 남아 있다면 경고 메시지를 표시한다.
       if ($order->subscription_next() === 'expiry' && $order->balance() > 0) {
           add_action('admin_notices', function () use ($order) {
@@ -23,7 +24,7 @@
               );
           });
       }
-
+  
       // 요청 파라미터를 사용해 특정 메타를 동기화할 수도 있다.
       if (isset($_GET['sync_membership_role'], $_GET['_wpnonce']) &&
           wp_verify_nonce($_GET['_wpnonce'], 'sync-membership-role-' . $order->ID())) {

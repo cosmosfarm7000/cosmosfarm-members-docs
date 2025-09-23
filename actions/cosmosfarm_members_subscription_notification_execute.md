@@ -10,6 +10,7 @@
   - `$notification_subject (string)`: 준비된 알림 제목입니다.
   - `$notification_message (string)`: 준비된 알림 본문입니다.
 - **예제 코드**:
+
   ```php
   // 알림 발송 전에 제목을 브랜드 규칙에 맞게 수정한다.
   add_action('cosmosfarm_members_subscription_notification_execute', function ($order, $product, $subscription_notification, &$subject, &$message) {

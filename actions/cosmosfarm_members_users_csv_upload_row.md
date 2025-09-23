@@ -7,13 +7,14 @@
   - `$user_id (int)`: 생성되었거나 업데이트된 워드프레스 사용자 ID입니다.
   - `$row (array)`: 현재 CSV 행 데이터(머리글 키를 기준으로 매핑)가 전달됩니다. 커스텀 필드나 추가 메타 값이 포함될 수 있습니다.
 - **예제 코드**:
+
   ```php
   // 업로드한 사용자에게 환영 이메일을 발송하고 메타를 기록한다.
   add_action('cosmosfarm_members_users_csv_upload_row', function ($user_id, $row) {
       if (!$user_id) {
           return;
       }
-
+  
       $email = get_user_meta($user_id, 'user_email', true) ?: get_userdata($user_id)->user_email;
       if ($email && empty($row['welcome_email_sent'])) {
           wp_mail(
@@ -22,7 +23,7 @@
               __('Your account information has been updated via CSV import.', 'textdomain')
           );
       }
-
+  
       update_user_meta($user_id, '_csv_imported_at', current_time('mysql'));
   }, 10, 2);
   ```

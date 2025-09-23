@@ -12,7 +12,7 @@
   add_action('cosmosfarm_members_skin_subscription_product_price', function ($skin, $product) {
       echo '<div class="price">' . esc_html(cosmosfarm_members_currency_format($product->price())) . '</div>';
   }, 10, 2);
-
+  
   ```
 
 - **주의 사항**:

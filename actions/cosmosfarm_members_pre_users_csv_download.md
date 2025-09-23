@@ -6,13 +6,14 @@
 - **인자 정보**:
   - *(없음)* 추가 인자를 전달하지 않습니다.
 - **예제 코드**:
+
   ```php
   // CSV 내보내기 전에 특정 역할만 허용하고 머리글을 커스터마이즈한다.
   add_action('cosmosfarm_members_pre_users_csv_download', function () {
       if (!current_user_can('list_users')) {
           wp_die(__('You do not have permission to export users.', 'textdomain'));
       }
-
+  
       add_action('pre_user_query', function ($user_query) {
           $user_query->query_vars['role__in'] = array('subscriber', 'customer');
       });

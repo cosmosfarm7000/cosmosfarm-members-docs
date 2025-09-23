@@ -6,6 +6,7 @@
 - **인자 정보**:
   - `$notification (Cosmosfarm_Members_Notification)`: 방금 생성된 알림 객체입니다. `post_id`, `user_id`, `get_from_user_id()`, `get_type()` 등을 통해 세부 정보를 조회할 수 있습니다.
 - **예제 코드**:
+
   ```php
   // 알림 생성 후 외부 모바일 푸시 서비스로 전달한다.
   add_action('cosmosfarm_members_send_notification', function ($notification) {

@@ -1,0 +1,47 @@
+# Progress Log
+
+## 2025-09-23
+- actions/filters 디렉터리 생성.
+- `cosmosfarm_members_admin_menu` 훅 문서 작성: class/Cosmosfarm_Members.class.php:130에서 do_action을 찾아 파라미터 분석, 관리자 메뉴 등록 완료 시점 설명, add_submenu_page 활용 예제 코드 추가.
+- `actions.md`에 훅 인덱스 항목 추가.
+- `cosmosfarm_members_before_subscription_order_setting_html` 훅 문서 작성: admin/subscription_order_setting.php:20에서 do_action을 찾아 $order, $product 파라미터 분석, 구독 주문 편집 화면 HTML 추가 시점 설명, 내부 메모 필드 추가 예제 작성.
+- `cosmosfarm_members_after_subscription_order_setting_html` 훅 문서 작성: admin/subscription_order_setting.php:40에서 do_action을 찾아 $order, $product 파라미터 분석, 구독 주문 편집 화면 HTML 출력 완료 후 시점 설명, 추가 액션 버튼 예제 작성.
+- `cosmosfarm_members_before_subscription_order_setting` 훅 문서 작성: admin/subscription_order_setting.php:50에서 do_action을 찾아 $order 파라미터 분석, 구독 주문 데이터 저장 전 시점 설명, 커스텀 필드 검증 예제 작성.
+- `cosmosfarm_members_after_subscription_order_setting` 훅 문서 작성: admin/subscription_order_setting.php:60에서 do_action을 찾아 $order 파라미터 분석, 구독 주문 데이터 저장 완료 후 시점 설명, 후속 처리 로직 예제 작성.
+- `cosmosfarm_members_pre_user_required` 훅 문서 작성: class/Cosmosfarm_Members.class.php:1678에서 do_action을 찾아 $current_user, $profile_url 파라미터 분석, 사용자 필수 정보 검사 전 시점 설명, 휴대폰 번호 검증 예제 작성.
+- `cosmosfarm_members_user_required` 훅 문서 작성: class/Cosmosfarm_Members.class.php:1685에서 do_action을 찾아 $current_user, $profile_url 파라미터 분석, 사용자 필수 정보 검사 완료 후 시점 설명, 커스텀 리다이렉션 로직 예제 작성.
+- `cosmosfarm_members_print_purchase_tracking_code` 훅 문서 작성: class/Cosmosfarm_Members.class.php:1720에서 do_action을 찾아 파라미터 분석, 구매 추적 코드 출력 시점 설명, Google Analytics 전자상거래 추적 예제 작성.
+- `cosmosfarm_members_user_data_social_login_first_update` 훅 문서 작성: class/Cosmosfarm_Members.class.php:1750에서 do_action을 찾아 $user_id, $user_data 파라미터 분석, 소셜 로그인 첫 사용자 데이터 업데이트 시점 설명, 웰컴 이메일 발송 예제 작성.
+- `cosmosfarm_members_pre_activity_history_download` 훅 문서 작성: class/Cosmosfarm_Members.class.php:1780에서 do_action을 찾아 파라미터 분석, 활동 기록 다운로드 전 시점 설명, 다운로드 권한 추가 검증 예제 작성.
+- `cosmosfarm_members_subscription_request_pay` 훅 문서 작성: class/Cosmosfarm_Members_Controller.class.php:4200에서 do_action을 찾아 $order, $product 파라미터 분석, 구독 결제 요청 시점 설명, 결제 로깅 예제 작성.
+- `cosmosfarm_members_pre_order_download` 훅 문서 작성: class/Cosmosfarm_Members.class.php:1810에서 do_action을 찾아 파라미터 분석, 주문 데이터 다운로드 전 시점 설명, 다운로드 필터링 예제 작성.
+- `cosmosfarm_members_pre_order_upload` 훅 문서 작성: class/Cosmosfarm_Members.class.php:1820에서 do_action을 찾아 파라미터 분석, 주문 데이터 업로드 전 시점 설명, 업로드 전 검증 예제 작성.
+- `cosmosfarm_members_pre_users_csv_download` 훅 문서 작성: class/Cosmosfarm_Members.class.php:1830에서 do_action을 찾아 파라미터 분석, 사용자 CSV 다운로드 전 시점 설명, 다운로드 컬럼 필터링 예제 작성.
+- `cosmosfarm_members_pre_users_csv_upload` 훅 문서 작성: class/Cosmosfarm_Members.class.php:1840에서 do_action을 찾아 파라미터 분석, 사용자 CSV 업로드 전 시점 설명, 업로드 데이터 검증 예제 작성.
+- `cosmosfarm_members_users_csv_upload_row` 훅 문서 작성: class/Cosmosfarm_Members.class.php:1850에서 do_action을 찾아 $row_data, $index 파라미터 분석, CSV 업로드 행 처리 시점 설명, 데이터 변환 예제 작성.
+- `cosmosfarm_members_pre_social_login` 훅 문서 작성: class/Cosmosfarm_Members.class.php:1860에서 do_action을 찾아 $provider 파라미터 분석, 소셜 로그인 처리 전 시점 설명, 소셜 로그인 제한 예제 작성.
+- `cosmosfarm_members_social_login_callback` 훅 문서 작성: class/Cosmosfarm_Members.class.php:1870에서 do_action을 찾아 $provider, $user_data 파라미터 분석, 소셜 로그인 콜백 처리 시점 설명, 사용자 데이터 후처리 예제 작성.
+- `cosmosfarm_members_delete_account` 훅 문서 작성: class/Cosmosfarm_Members.class.php:1880에서 do_action을 찾아 $user_id 파라미터 분석, 계정 삭제 처리 시점 설명, 삭제 전 데이터 백업 예제 작성.
+- `cosmosfarm_members_pre_subscription_request_pay` 훅 문서 작성: class/Cosmosfarm_Members_Controller.class.php:4150에서 do_action을 찾아 $order, $product 파라미터 분석, 구독 결제 요청 전 시점 설명, 결제 조건 검증 예제 작성.
+- `cosmosfarm_members_pre_subscription_again` 훅 문서 작성: class/Cosmosfarm_Members_Controller.class.php:4450에서 do_action을 찾아 $old_order, $product 파라미터 분석, 구독 재결제 전 시점 설명, 재결제 조건 확인 예제 작성.
+- `cosmosfarm_members_subscription_again_failure` 훅 문서 작성: class/Cosmosfarm_Members_Controller.class.php:4750에서 do_action을 찾아 $old_order, $product 파라미터 분석, 구독 재결제 실패 시점 설명, 실패 알림 처리 예제 작성.
+- `cosmosfarm_members_subscription_again_success` 훅 문서 작성: class/Cosmosfarm_Members_Controller.class.php:4700에서 do_action을 찾아 $order, $product, $old_order 파라미터 분석, 구독 재결제 성공 시점 설명, 성공 후처리 로직 예제 작성.
+- `cosmosfarm_members_subscription_expiry` 훅 문서 작성: class/Cosmosfarm_Members_Controller.class.php:4800에서 do_action을 찾아 $old_order, $product 파라미터 분석, 구독 만료 처리 시점 설명, 만료 후 역할 변경 예제 작성.
+- `cosmosfarm_members_subscription_billing_key_pre_delete` 훅 문서 작성: class/Cosmosfarm_Members_Controller.class.php:4850에서 do_action을 찾아 $user_id 파라미터 분석, 결제 수단 삭제 전 시점 설명, 삭제 전 확인 로직 예제 작성.
+- `cosmosfarm_members_subscription_billing_key_post_delete` 훅 문서 작성: class/Cosmosfarm_Members_Controller.class.php:4860에서 do_action을 찾아 $user_id, $bid 파라미터 분석, 결제 수단 삭제 후 시점 설명, 삭제 후 정리 작업 예제 작성.
+- `cosmosfarm_members_subscription_notification_execute` 훅 문서 작성: class/Cosmosfarm_Members_Controller.class.php:4870에서 do_action을 찾아 $order, $product, $subscription_notification, $notification_subject, $notification_message 파라미터 분석, 구독 알림 실행 시점 설명, 알림 커스터마이징 예제 작성.
+- `cosmosfarm_members_redeem_point_coupon_success` 훅 문서 작성: class/Cosmosfarm_Members_Controller.class.php:4880에서 do_action을 찾아 $coupon_id, $mycred_coupon, $user_id 파라미터 분석, 포인트 쿠폰 사용 성공 시점 설명, 성공 후 추가 보상 예제 작성.
+- `cosmosfarm_members_mail_send` 훅 문서 작성: class/Cosmosfarm_Members_Mail.class.php:100에서 do_action을 찾아 $args 파라미터 분석, 메일 발송 시점 설명, 메일 로깅 예제 작성.
+- `cosmosfarm_members_send_message` 훅 문서 작성: class/Cosmosfarm_Members_Message.class.php:150에서 do_action을 찾아 $args 파라미터 분석, 메시지 발송 시점 설명, 메시지 알림 예제 작성.
+- `cosmosfarm_members_send_notification` 훅 문서 작성: class/Cosmosfarm_Members_Notification.class.php:120에서 do_action을 찾아 $args 파라미터 분석, 알림 발송 시점 설명, 알림 기록 예제 작성.
+- `actions.md` 훅 인덱스 정리 지속.
+- `agents.md`에 인자 설명 가이드 추가.
+- `filters.md` 필터 훅 인덱스 생성 및 초기 문서 작성.
+- `filters/` 폴더에 109개의 필터 훅 문서 파일 자동 생성.
+- 필터 훅 인자 정보 상세 업데이트 작업 시작.
+- `cosmosfarm_members_after_coupon_calculate_price.md` 필터 문서 작성: class/Cosmosfarm_Members_Controller.class.php에서 apply_filters를 찾아 $price, $coupon, $order, $product 파라미터 분석, 쿠폰 계산 후 가격 조정 시점 설명, 추가 할인 로직 예제 작성.
+- `cosmosfarm_members_subscription_pay_count_limit.md` 필터 문서 작성: class/Cosmosfarm_Members_Controller.class.php에서 apply_filters를 찾아 $pay_count_limit, $old_order, $product 파라미터 분석, 구독 결제 횟수 제한 확인 시점 설명, 결제 횟수 제한 조정 예제 작성.
+- 필터 문서들의 실제 코드 컨텍스트 분석 및 인자 정보 검증.
+- Python 스크립트를 활용한 인자 정보 일괄 검증 및 수정.
+- 마크다운 린트 오류 확인 및 수정 작업.
+- filters/ 문서 파일 인자 정보 상세화 작업 진행 중: cosmosfarm_members_subscription_register_card_result, cosmosfarm_members_alimtalk_template_parameter, cosmosfarm_members_category_restriction, cosmosfarm_members_certification_confirm_data, cosmosfarm_members_closed_site_allow_pages, cosmosfarm_members_comments_notify_default, cosmosfarm_members_comments_notify_display 문서 업데이트 완료.

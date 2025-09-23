@@ -7,6 +7,7 @@
   - `$old_order (Cosmosfarm_Members_Subscription_Order)`: 재시도를 시도한 기존 주문 객체입니다. `ID()`, `user()`, `pay_count()` 등을 참조할 수 있습니다.
   - `$product (Cosmosfarm_Members_Subscription_Product)`: 재시도 대상 구독 상품 객체입니다. `price()`, `subscription_again_price_type()`, `subscription_active()` 등의 정보를 제공합니다.
 - **예제 코드**:
+
   ```php
   // 재결제가 실패하면 슬랙 알림을 보낸다.
   add_action('cosmosfarm_members_subscription_again_failure', function ($old_order, $product) {
@@ -17,7 +18,7 @@
           $user ? $user->user_login : 'guest',
           $product->title()
       );
-
+  
       wp_remote_post('https://hooks.slack.com/services/XXX/YYY/ZZZ', array(
           'timeout' => 3,
           'body'    => wp_json_encode(array('text' => $message)),

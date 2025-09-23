@@ -6,6 +6,7 @@
 - **인자 정보**:
   - `$channel (string)`: 요청된 소셜 로그인 채널 슬러그(예: `naver`, `kakao`, `facebook`).
 - **예제 코드**:
+
   ```php
   // 특정 채널을 임시로 비활성화한다.
   add_action('cosmosfarm_members_pre_social_login', function ($channel) {

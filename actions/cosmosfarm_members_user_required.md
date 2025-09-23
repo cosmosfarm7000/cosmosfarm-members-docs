@@ -7,13 +7,14 @@
   - `$current_user (WP_User)`: 검사를 통과한 현재 사용자 객체입니다. `ID`, `user_email`, `roles` 등 기본 속성과 `get_user_meta()`를 함께 사용해 추가 정보를 읽거나 갱신할 수 있습니다.
   - `$profile_url (string)`: 플러그인이 사용하는 프로필 편집 URL입니다. 안내 메시지나 추가 액션 링크를 만들 때 재사용할 수 있습니다.
 - **예제 코드**:
+
   ```php
   // 필수 정보 입력을 완료한 사용자를 기록하고 알림 배지를 숨긴다.
   add_action('cosmosfarm_members_user_required', function ($current_user, $profile_url) {
       if (!get_user_meta($current_user->ID, '_required_fields_completed', true)) {
           update_user_meta($current_user->ID, '_required_fields_completed', current_time('mysql'));
       }
-
+  
       // 대시보드 위젯에서 사용할 트랜지언트를 제거한다.
       delete_transient('members_required_notice_' . $current_user->ID);
   }, 10, 2);

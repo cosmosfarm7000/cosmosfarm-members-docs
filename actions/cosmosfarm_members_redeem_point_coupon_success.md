@@ -8,6 +8,7 @@
   - `$mycred_coupon (array)`: MyCred 쿠폰 정보 배열입니다.
   - `$user_id (int)`: 쿠폰을 사용한 사용자 ID입니다.
 - **예제 코드**:
+
   ```php
   // 쿠폰 차감 후 사용자에게 감사 알림을 보낸다.
   add_action('cosmosfarm_members_redeem_point_coupon_success', function ($coupon_id, $mycred_coupon, $user_id) {
@@ -15,7 +16,7 @@
       if (!$user) {
           return;
       }
-
+  
       wp_mail(
           $user->user_email,
           __('Coupon redeemed successfully', 'textdomain'),

@@ -6,6 +6,7 @@
 - **인자 정보**:
   - *(없음)* 이 훅은 추가 인자를 전달하지 않습니다.
 - **예제 코드**:
+
   ```php
   // 플러그인 기본 메뉴가 생성된 뒤 커스텀 하위 메뉴를 추가한다.
   add_action('cosmosfarm_members_admin_menu', function () {
@@ -18,7 +19,7 @@
           'my_members_reports_page_render'
       );
   });
-
+  
   function my_members_reports_page_render() {
       echo '<div class="wrap"><h1>' . esc_html__('Reports Dashboard', 'textdomain') . '</h1></div>';
   }

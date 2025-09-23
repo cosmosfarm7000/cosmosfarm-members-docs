@@ -6,18 +6,19 @@
 - **인자 정보**:
   - *(없음)* 추가 인자를 전달하지 않습니다.
 - **예제 코드**:
+
   ```php
   // 업로드 전에 파일 크기 제한과 확장자를 한 번 더 검사한다.
   add_action('cosmosfarm_members_pre_order_upload', function () {
       if (empty($_FILES['order_upload']['tmp_name'])) {
           wp_die(__('Upload file is missing.', 'textdomain'));
       }
-
+  
       $size = filesize($_FILES['order_upload']['tmp_name']);
       if ($size > 5 * 1024 * 1024) {
           wp_die(__('CSV file must be smaller than 5MB.', 'textdomain'));
       }
-
+  
       $ext = strtolower(pathinfo($_FILES['order_upload']['name'], PATHINFO_EXTENSION));
       if (!in_array($ext, array('csv'))) {
           wp_die(__('Only CSV files are supported.', 'textdomain'));

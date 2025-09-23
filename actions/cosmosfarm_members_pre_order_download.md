@@ -6,13 +6,14 @@
 - **인자 정보**:
   - *(없음)* 추가 인자를 제공하지 않습니다.
 - **예제 코드**:
+
   ```php
   // 다운로드 전에 특정 주문 상태만 강제로 필터링한다.
   add_action('cosmosfarm_members_pre_order_download', function () {
       if (!current_user_can('manage_cosmosfarm_members_order')) {
           wp_die(__('You do not have permission to export orders.', 'textdomain'));
       }
-
+  
       add_filter('pre_get_posts', function ($query) {
           if (!is_admin() || $query->get('post_type') !== 'cosmosfarm_order') {
               return $query;

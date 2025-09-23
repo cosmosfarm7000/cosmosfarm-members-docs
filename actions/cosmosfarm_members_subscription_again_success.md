@@ -8,6 +8,7 @@
   - `$product (Cosmosfarm_Members_Subscription_Product)`: 해당 주문과 연결된 상품 객체입니다.
   - `$old_order (Cosmosfarm_Members_Subscription_Order)`: 재결제 이전의 기존 주문 객체입니다.
 - **예제 코드**:
+
   ```php
   // 재결제가 성공한 뒤 외부 CRM에 리포트한다.
   add_action('cosmosfarm_members_subscription_again_success', function ($order, $product, $old_order) {

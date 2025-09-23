@@ -7,13 +7,14 @@
   - `$current_user (WP_User)`: 현재 로그인한 사용자 객체입니다. `ID`, `user_email`, `roles` 등의 프로퍼티와 `get( 'field' )`, `has_cap( 'capability' )` 같은 메서드를 활용할 수 있으며, `get_user_meta()`와 조합해 커스텀 메타 값을 확인할 수 있습니다.
   - `$profile_url (string)`: 필수 정보가 누락됐을 때 이동할 프로필 편집 페이지 URL입니다. `add_query_arg()`로 커스텀 파라미터를 붙여 안내 메시지를 띄우는 데 사용할 수 있습니다.
 - **예제 코드**:
+
   ```php
   // 휴대폰 번호가 없으면 프로필 페이지로 강제 이동시켜 필수 입력을 안내한다.
   add_action('cosmosfarm_members_pre_user_required', function ($current_user, $profile_url) {
       if (defined('MY_COMPANY_SKIP_REQUIRED_CHECK')) {
           return; // 특정 상황에서는 검사 생략
       }
-
+  
       $phone = get_user_meta($current_user->ID, 'mobile_phone', true);
       if (empty($phone)) {
           wp_safe_redirect(add_query_arg('required', 'phone', $profile_url));

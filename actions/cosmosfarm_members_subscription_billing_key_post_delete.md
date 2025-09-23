@@ -7,18 +7,19 @@
   - `$user_id (int)`: 빌링 키를 삭제한 사용자 ID입니다.
   - `$bid (string)`: 삭제된 빌링 키 문자열입니다.
 - **예제 코드**:
+
   ```php
   // 빌링 키 삭제 후 외부 결제 시스템에서 토큰을 비활성화한다.
   add_action('cosmosfarm_members_subscription_billing_key_post_delete', function ($user_id, $bid) {
       if (!$bid) {
           return;
       }
-
+  
       wp_remote_post('https://pg.example.com/api/token/delete', array(
           'timeout' => 5,
           'body'    => array('billing_key' => $bid),
       ));
-
+  
       update_user_meta($user_id, '_billing_key_deleted_at', current_time('mysql'));
   }, 10, 2);
   ```

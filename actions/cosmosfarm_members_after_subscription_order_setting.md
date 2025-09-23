@@ -7,16 +7,17 @@
   - `$order (Cosmosfarm_Members_Subscription_Order)`: 방금 표시된 주문 객체입니다. `ID()`, `user()`, `real_price()`, `subscription_next()`, `subscription_next_format()` 등으로 결제 상태를 파악할 수 있으며, `set_*` 계열 메서드로 후속 업데이트를 수행할 수도 있습니다.
   - `$product (Cosmosfarm_Members_Subscription_Product)`: 주문과 연결된 상품 객체입니다. `product_id()`, `price()`, `subscription_first_free()`, `subscription_type()`/`subscription_type_format()`, `fields()` 등으로 상품/필드 구성을 확인할 수 있습니다.
 - **예제 코드**:
+
   ```php
   // 주문 상세 페이지가 렌더링된 뒤 감사 로그와 리마인더 스케줄을 남긴다.
   add_action('cosmosfarm_members_after_subscription_order_setting', function ($order, $product) {
       if (!current_user_can('manage_cosmosfarm_members_order')) {
           return;
       }
-
+  
       // 감사 로그 남기기
       error_log(sprintf('[Membership] Order #%d viewed by %s', $order->ID(), wp_get_current_user()->user_login));
-
+  
       // 다음 결제 예정일이 존재하면 관리자용 리마인더 이벤트 예약
       $next_timestamp = strtotime($order->next_subscription_datetime());
       if ($next_timestamp && $next_timestamp > time()) {

@@ -7,13 +7,14 @@
   - `$order (Cosmosfarm_Members_Subscription_Order)`: 현재 편집 중인 주문 객체입니다. `ID()`로 포스트 ID를, `user()`로 연결된 `WP_User`를 가져올 수 있으며 결제 회차(`pay_count()`), 가격(`price()`, `next_price()`, `real_price()`), 구독 상태(`subscription_type()`, `subscription_next()`, `subscription_next_format()`) 등을 조회할 수 있습니다. 매직 프로퍼티(`$order->buyer_name`, `$order->buyer_email`, `$order->buyer_tel`)로 주문자 정보를 바로 출력할 수 있고, `set_subscription_role()`, `set_next_price()` 같은 세터로 값을 갱신할 수도 있으므로 변경 시에는 후속 훅에서 검증이 필요합니다.
   - `$product (Cosmosfarm_Members_Subscription_Product)`: 주문과 연결된 구독 상품 객체입니다. `product_id()`로 상품 포스트 ID를 확인하고, `price()`, `subscription_first_free()`, `subscription_type()`, `subscription_type_format()`으로 반복 결제 정책을 점검합니다. `fields()`와 `option_fields()`는 체크아웃 커스텀 필드 구성을 반환하며, `option_title()`/`option_subtitle()`을 통해 옵션 라벨, `subscription_first_free()` 값으로 무료 체험 기간(`1day`, `7day`, `onetime` 등)을 파악할 수 있습니다.
 - **예제 코드**:
+
   ```php
   // 결제 요약과 내부 체크리스트를 폼 하단에 노출한다.
   add_action('cosmosfarm_members_after_subscription_order_setting_html', function ($order, $product) {
       if (!current_user_can('manage_cosmosfarm_members')) {
           return;
       }
-
+  
       $current_role  = $order->subscription_role();
       $next_schedule = $order->next_subscription_datetime('', 'Y-m-d H:i');
       ?>

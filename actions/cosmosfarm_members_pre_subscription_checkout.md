@@ -13,7 +13,7 @@
       if (!current_user_can('read')) {
           wp_die(__('You are not allowed to access checkout.', 'textdomain'));
       }
-
+  
       // 1회 결제(onetime) 상품은 커스텀 알림 후 계속 진행
       if ($product->subscription_type() === 'onetime') {
           add_action('wp_footer', function () use ($product) {
@@ -21,7 +21,7 @@
           });
       }
   }, 10, 1);
-
+  
   ```
 
 - **주의 사항**:

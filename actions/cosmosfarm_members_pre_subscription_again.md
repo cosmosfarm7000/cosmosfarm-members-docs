@@ -7,6 +7,7 @@
   - `$old_order (Cosmosfarm_Members_Subscription_Order)`: 재결제 대상이 되는 기존 주문 객체입니다.
   - `$product (Cosmosfarm_Members_Subscription_Product)`: 재결제 대상 상품 객체입니다.
 - **예제 코드**:
+
   ```php
   // 재결제 전에 사용자 계정이 정지 상태인지 확인한다.
   add_action('cosmosfarm_members_pre_subscription_again', function ($old_order, $product) {

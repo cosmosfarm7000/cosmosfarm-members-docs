@@ -6,6 +6,7 @@
 - **인자 정보**:
   - `$message (Cosmosfarm_Members_Message)`: 방금 생성된 메시지 객체입니다. `post_id`, `user_id`, `get_from_user_id()`, `get_to_user_id()` 등의 메서드로 세부 정보를 조회할 수 있습니다.
 - **예제 코드**:
+
   ```php
   // 메시지 생성 후 슬랙 알림을 보낸다.
   add_action('cosmosfarm_members_send_message', function ($message) {

@@ -6,6 +6,7 @@
 - **인자 정보**:
   - `$user_id (int)`: 빌링 키가 삭제될 사용자 ID입니다.
 - **예제 코드**:
+
   ```php
   // 빌링 키 삭제 전에 외부 PG에 로그를 남긴다.
   add_action('cosmosfarm_members_subscription_billing_key_pre_delete', function ($user_id) {

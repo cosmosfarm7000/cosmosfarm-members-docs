@@ -7,6 +7,7 @@
   - `$order (Cosmosfarm_Members_Subscription_Order)`: 만료된 주문 객체입니다.
   - `$product (Cosmosfarm_Members_Subscription_Product)`: 해당 주문의 상품 객체입니다.
 - **예제 코드**:
+
   ```php
   // 구독 만료 시 CRM에 상태를 동기화한다.
   add_action('cosmosfarm_members_subscription_expiry', function ($order, $product) {

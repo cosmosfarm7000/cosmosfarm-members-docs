@@ -12,7 +12,7 @@
   add_action('cosmosfarm_members_skin_after_subscription_product', function ($skin, $product) {
       echo '<p class="meta">' . esc_html(sprintf(__('Purchase count: %d', 'textdomain'), (int) get_post_meta($product->product_id(), '_purchase_count', true))) . '</p>';
   }, 10, 2);
-
+  
   ```
 
 - **주의 사항**:
