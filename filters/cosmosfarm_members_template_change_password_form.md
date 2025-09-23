@@ -2,7 +2,7 @@
 
 - **분류**: Filter
 - **정의 위치**: `..\class\Cosmosfarm_Members_Skin.class.php`
-- **실행 시점**: 
+- **실행 시점**: 비밀번호 변경 폼 템플릿 파일 경로를 설정할 때 실행됩니다.
 - **인자 정보**:
   - `$file_path (mixed)`: 파라미터 1
   - `$action (mixed)`: 파라미터 2

@@ -2,7 +2,7 @@
 
 - **분류**: Filter
 - **정의 위치**: `..\class\Cosmosfarm_Members_Controller.class.php`
-- **실행 시점**: 
+- **실행 시점**: 사용자 목록을 CSV로 다운로드할 때 추가 usermeta 컬럼을 설정할 때 실행됩니다.
 - **인자 정보**:
   - `$add_usermeta (mixed)`: 파라미터 1
 - **예제 코드**:

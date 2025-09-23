@@ -2,7 +2,7 @@
 
 - **분류**: Filter
 - **정의 위치**: `..\class\Cosmosfarm_Members_Controller.class.php`
-- **실행 시점**: 
+- **실행 시점**: 사용자 CSV 다운로드 시 각 사용자의 행 데이터를 필터링합니다.
 - **인자 정보**:
   - `$row_data (mixed)`: 파라미터 1
   - `$user (mixed)`: 파라미터 2
