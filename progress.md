@@ -1,0 +1,38 @@
+﻿# Progress Log
+
+## 2025-09-23
+- actions/filters 디렉터리 생성.
+- `cosmosfarm_members_admin_menu` 훅 문서 초안 작성 및 예제 코드 추가.
+- `actions.md`에 훅 인덱스 항목 추가.
+- `cosmosfarm_members_before_subscription_order_setting_html` 훅 문서 파라미터 설명 보강 및 예제 검토.
+- `cosmosfarm_members_after_subscription_order_setting_html` 훅 문서 작성 및 파라미터 상세화.
+- `cosmosfarm_members_before_subscription_order_setting` 훅 문서 작성.
+- `cosmosfarm_members_after_subscription_order_setting` 훅 문서 작성.
+- `cosmosfarm_members_pre_user_required` 훅 문서 작성.
+- `cosmosfarm_members_user_required` 훅 문서 작성.
+- `cosmosfarm_members_print_purchase_tracking_code` 훅 문서 작성.
+- `cosmosfarm_members_user_data_social_login_first_update` 훅 문서 작성.
+- `cosmosfarm_members_pre_activity_history_download` 훅 문서 작성.
+- `cosmosfarm_members_subscription_request_pay` 훅 문서 작성.
+- `cosmosfarm_members_pre_order_download` 훅 문서 작성.
+- `cosmosfarm_members_pre_order_upload` 훅 문서 작성.
+- `cosmosfarm_members_pre_users_csv_download` 훅 문서 작성.
+- `cosmosfarm_members_pre_users_csv_upload` 훅 문서 작성.
+- `cosmosfarm_members_users_csv_upload_row` 훅 문서 작성.
+- `cosmosfarm_members_pre_social_login` 훅 문서 작성.
+- `cosmosfarm_members_social_login_callback` 훅 문서 작성.
+- `cosmosfarm_members_delete_account` 훅 문서 작성.
+- `cosmosfarm_members_pre_subscription_request_pay` 훅 문서 작성.
+- `cosmosfarm_members_pre_subscription_again` 훅 문서 작성.
+- `cosmosfarm_members_subscription_again_failure` 훅 문서 작성.
+- `cosmosfarm_members_subscription_again_success` 훅 문서 작성.
+- `cosmosfarm_members_subscription_expiry` 훅 문서 작성.
+- `cosmosfarm_members_subscription_billing_key_pre_delete` 훅 문서 작성.
+- `cosmosfarm_members_subscription_billing_key_post_delete` 훅 문서 작성.
+- `cosmosfarm_members_subscription_notification_execute` 훅 문서 작성.
+- `cosmosfarm_members_redeem_point_coupon_success` 훅 문서 작성.
+- `cosmosfarm_members_mail_send` 훅 문서 작성.
+- `cosmosfarm_members_send_message` 훅 문서 작성.
+- `cosmosfarm_members_send_notification` 훅 문서 작성.
+- `actions.md` 훅 인덱스 정리 지속.
+- `agents.md`에 인자 설명 가이드 추가.

@@ -1,13 +1,66 @@
 # Cosmosfarm Members Actions
 
+## Hook Index
+
+- [cosmosfarm_members_admin_menu](actions/cosmosfarm_members_admin_menu.md) - 관리자 메뉴 등록 완료 후 확장 지점
+- [cosmosfarm_members_before_subscription_order_setting_html](actions/cosmosfarm_members_before_subscription_order_setting_html.md) - 구독 주문 폼 렌더링 직전 UI 확장
+- [cosmosfarm_members_after_subscription_order_setting_html](actions/cosmosfarm_members_after_subscription_order_setting_html.md) - 구독 주문 폼 출력 후 요약/후처리 구간
+- [cosmosfarm_members_before_subscription_order_setting](actions/cosmosfarm_members_before_subscription_order_setting.md) - 구독 주문 데이터 로드 직후 검증/로깅 지점
+- [cosmosfarm_members_after_subscription_order_setting](actions/cosmosfarm_members_after_subscription_order_setting.md) - 구독 주문 화면 렌더링 완료 후 후처리 지점
+- [cosmosfarm_members_pre_user_required](actions/cosmosfarm_members_pre_user_required.md) - 회원 필수정보 검증 전 사용자 커스텀 점검
+- [cosmosfarm_members_user_required](actions/cosmosfarm_members_user_required.md) - 필수 정보 통과 후 후속 처리 지점
+- [cosmosfarm_members_print_purchase_tracking_code](actions/cosmosfarm_members_print_purchase_tracking_code.md) - 결제 완료 페이지에서 커스텀 추적 코드 삽입
+- [cosmosfarm_members_user_data_social_login_first_update](actions/cosmosfarm_members_user_data_social_login_first_update.md) - 소셜 로그인 사용자가 프로필을 최초로 저장할 때 후처리
+- [cosmosfarm_members_pre_activity_history_download](actions/cosmosfarm_members_pre_activity_history_download.md) - 활동 내역 CSV 추출 직전 커스텀 처리
+- [cosmosfarm_members_subscription_request_pay](actions/cosmosfarm_members_subscription_request_pay.md) - 구독 결제 요청이 생성된 직후 후처리
+- [cosmosfarm_members_pre_order_download](actions/cosmosfarm_members_pre_order_download.md) - 구독 주문 CSV 추출 직전 쿼리 조정
+- [cosmosfarm_members_pre_order_upload](actions/cosmosfarm_members_pre_order_upload.md) - 주문 CSV 업로드 직전 유효성 검사
+- [cosmosfarm_members_pre_users_csv_download](actions/cosmosfarm_members_pre_users_csv_download.md) - 회원 CSV 추출 직전 보안/필터 조정
+- [cosmosfarm_members_pre_users_csv_upload](actions/cosmosfarm_members_pre_users_csv_upload.md) - 회원 CSV 업로드 직전 보안/백업 처리
+- [cosmosfarm_members_users_csv_upload_row](actions/cosmosfarm_members_users_csv_upload_row.md) - 회원 CSV 각 행 처리 시 후속 작업
+- [cosmosfarm_members_pre_social_login](actions/cosmosfarm_members_pre_social_login.md) - 소셜 로그인 리다이렉트 직전 채널 검증
+- [cosmosfarm_members_social_login_callback](actions/cosmosfarm_members_social_login_callback.md) - 소셜 로그인 콜백 이후 사용자 후처리
+- [cosmosfarm_members_delete_account](actions/cosmosfarm_members_delete_account.md) - 회원 탈퇴 직전에 데이터 정리
+- [cosmosfarm_members_pre_subscription_request_pay](actions/cosmosfarm_members_pre_subscription_request_pay.md) - 구독 결제 요청 직전 사전 검증
+- [cosmosfarm_members_pre_subscription_again](actions/cosmosfarm_members_pre_subscription_again.md) - 구독 재결제 직전 조건 검증
+
+- [cosmosfarm_members_subscription_again_failure](actions/cosmosfarm_members_subscription_again_failure.md) - 구독 재결제 실패 시 알림/후처리
+- [cosmosfarm_members_subscription_again_success](actions/cosmosfarm_members_subscription_again_success.md) - 구독 재결제 성공 후 통지
+- [cosmosfarm_members_subscription_expiry](actions/cosmosfarm_members_subscription_expiry.md) - 구독 만료 시 상태 동기화
+- [cosmosfarm_members_subscription_billing_key_pre_delete](actions/cosmosfarm_members_subscription_billing_key_pre_delete.md) - 빌링 키 삭제 직전 커스텀 처리
+- [cosmosfarm_members_subscription_billing_key_post_delete](actions/cosmosfarm_members_subscription_billing_key_post_delete.md) - 빌링 키 삭제 후 외부 동기화
+- [cosmosfarm_members_subscription_notification_execute](actions/cosmosfarm_members_subscription_notification_execute.md) - 구독 알림 발송 직전 템플릿 조정
+- [cosmosfarm_members_redeem_point_coupon_success](actions/cosmosfarm_members_redeem_point_coupon_success.md) - 포인트 쿠폰 교환 성공 시 후속 작업
+- [cosmosfarm_members_mail_send](actions/cosmosfarm_members_mail_send.md) - 메일 발송 직전 머리글/CTA 조정
+- [cosmosfarm_members_send_message](actions/cosmosfarm_members_send_message.md) - 쪽지 생성 후 커스텀 알림
+- [cosmosfarm_members_send_notification](actions/cosmosfarm_members_send_notification.md) - 알림 저장 후 외부 푸시 연동
+
+- [cosmosfarm_members_pre_subscription_checkout](actions/cosmosfarm_members_pre_subscription_checkout.md) - 구독 결제 페이지 로드 직전 접근 제어/프리로딩
+- [cosmosfarm_members_skin_subscription_product](actions/cosmosfarm_members_skin_subscription_product.md) - 구독 상품 카드 렌더 직전 배지/프리헤더 출력
+- [cosmosfarm_members_skin_after_subscription_product](actions/cosmosfarm_members_skin_after_subscription_product.md) - 구독 상품 카드 출력 직후 하단 부가정보
+- [cosmosfarm_members_skin_subscription_product_title](actions/cosmosfarm_members_skin_subscription_product_title.md) - 상품 제목 출력 지점
+- [cosmosfarm_members_skin_subscription_product_price](actions/cosmosfarm_members_skin_subscription_product_price.md) - 상품 가격 출력 지점
+- [cosmosfarm_members_skin_subscription_product_type](actions/cosmosfarm_members_skin_subscription_product_type.md) - 상품 유형 라벨 출력 지점
+- [cosmosfarm_members_skin_subscription_product_first_free](actions/cosmosfarm_members_skin_subscription_product_first_free.md) - 첫 달 무료 표시 지점
+- [cosmosfarm_members_skin_subscription_product_button](actions/cosmosfarm_members_skin_subscription_product_button.md) - 상품 버튼 출력 지점
+- [cosmosfarm_members_skin_subscription_product_list](actions/cosmosfarm_members_skin_subscription_product_list.md) - 상품 목록 루프 영역 커스텀
+- [cosmosfarm_members_skin_subscription_product_latest](actions/cosmosfarm_members_skin_subscription_product_latest.md) - 최신 상품 목록 영역 커스텀
+- [cosmosfarm_members_skin_subscription_product_single_template](actions/cosmosfarm_members_skin_subscription_product_single_template.md) - 단일 상품 상세 템플릿 지점
+- [cosmosfarm_members_skin_subscription_checkout](actions/cosmosfarm_members_skin_subscription_checkout.md) - 결제 스킨 본문 출력 지점
+- [cosmosfarm_members_skin_subscription_checkout_field_template](actions/cosmosfarm_members_skin_subscription_checkout_field_template.md) - 결제 필드 템플릿 분기 지점
+- [cosmosfarm_members_skin_comments_reviews](actions/cosmosfarm_members_skin_comments_reviews.md) - 댓글/리뷰 블록 출력 지점
+- [cosmosfarm_members_user_social_register](actions/cosmosfarm_members_user_social_register.md) - 소셜 신규 사용자 생성 직후
+
 이 문서는 Cosmosfarm Members 플러그인에서 사용되는 `do_action` 훅들을 정리한 것입니다. `do_action`은 특정 이벤트가 발생했을 때 사용자 정의 함수를 실행할 수 있도록 합니다.
 
 ## 훅 목록 및 예제
 
+
 ### `cosmosfarm_members_admin_menu`
-*   **설명**: 관리자 메뉴가 로드될 때 실행됩니다.
-*   **파일**: `class/Cosmosfarm_Members.class.php`
-*   **예제**:
+- **설명**: 관리자 메뉴가 로드될 때 실행됩니다.
+- **파일**: `class/Cosmosfarm_Members.class.php`
+- **예제**:
+
     ```php
     add_action('cosmosfarm_members_admin_menu', 'my_custom_admin_menu_item');
     function my_custom_admin_menu_item() {
@@ -24,10 +77,12 @@
     }
     ```
 
+
 ### `cosmosfarm_members_before_subscription_order_setting_html`
-*   **설명**: 구독 주문 설정 HTML 출력 전에 실행됩니다.
-*   **파일**: `admin/subscription_order_setting.php`
-*   **예제**:
+- **설명**: 구독 주문 설정 HTML 출력 전에 실행됩니다.
+- **파일**: `admin/subscription_order_setting.php`
+- **예제**:
+
     ```php
     add_action('cosmosfarm_members_before_subscription_order_setting_html', 'my_custom_before_order_setting_html', 10, 2);
     function my_custom_before_order_setting_html($order, $product) {
@@ -35,10 +90,12 @@
     }
     ```
 
+
 ### `cosmosfarm_members_after_subscription_order_setting_html`
-*   **설명**: 구독 주문 설정 HTML 출력 후에 실행됩니다.
-*   **파일**: `admin/subscription_order_setting.php`
-*   **예제**:
+- **설명**: 구독 주문 설정 HTML 출력 후에 실행됩니다.
+- **파일**: `admin/subscription_order_setting.php`
+- **예제**:
+
     ```php
     add_action('cosmosfarm_members_after_subscription_order_setting_html', 'my_custom_after_order_setting_html', 10, 2);
     function my_custom_after_order_setting_html($order, $product) {
