@@ -10,14 +10,14 @@
 - **예제 코드**:
 
   ```php
-add_filter('cosmosfarm_members_subscription_pay_count_limit', 'my_custom_pay_count_limit', 10, 3);
-function my_custom_pay_count_limit($pay_count_limit, $old_order, $product) {
-    // 특정 상품에 대한 결제 횟수 제한
-    if ($product->ID() === 456) {
-        return 3; // 최대 3회까지 결제 가능
-    }
-    return $pay_count_limit;
-}
+  add_filter('cosmosfarm_members_subscription_pay_count_limit', 'my_custom_pay_count_limit', 10, 3);
+  function my_custom_pay_count_limit($pay_count_limit, $old_order, $product) {
+      // 특정 상품에 대한 결제 횟수 제한 해제
+      if ($product->ID() === 456) {
+          return true; // 결제 횟수 제한을 무시하고 계속 결제 허용
+      }
+      return $pay_count_limit;
+  }
   ```
 
 - **주의 사항**: 필터 함수는 반드시 값을 반환해야 합니다.
