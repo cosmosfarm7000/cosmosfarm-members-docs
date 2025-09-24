@@ -1,7 +1,7 @@
 # cosmosfarm_members_subscription_send_sms_again_message
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members.class.php:2872`
 - **실행 시점**: 구독 상품의 정기결제 재결제 성공 시 발송되는 SMS 메시지를 필터링합니다.
 - **인자 정보**:
   - `$sms (array)`: SMS 데이터 배열. 'content' 등의 키를 포함합니다.

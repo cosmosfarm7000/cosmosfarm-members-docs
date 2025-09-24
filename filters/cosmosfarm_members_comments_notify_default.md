@@ -1,7 +1,7 @@
 # cosmosfarm_members_comments_notify_default
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_KBoard.class.php:167`
+- **정의 위치**: `class/Cosmosfarm_Members_KBoard.class.php:167`
 - **실행 시점**: KBoard 게시판에서 댓글 알림의 기본 활성화 상태를 필터링합니다. 게시판별로 댓글 알림의 기본 동작을 제어할 수 있습니다.
 - **인자 정보**:
   - `$default (bool)`: 댓글 알림의 기본 활성화 상태. 기본값은 true로, 댓글 작성 시 알림이 기본적으로 활성화되어 있음을 의미합니다. false로 변경하면 기본적으로 알림이 비활성화됩니다.

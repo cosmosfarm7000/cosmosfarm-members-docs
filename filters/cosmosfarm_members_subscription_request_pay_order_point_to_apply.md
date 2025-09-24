@@ -1,7 +1,7 @@
 # cosmosfarm_members_subscription_request_pay_order_point_to_apply
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_Controller.class.php`class/Cosmosfarm_Members_Controller.class.php``
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:4128`
 - **실행 시점**: 구독 결제 시 적용될 포인트 잔액을 필터링합니다.
 - **인자 정보**:
   - `$mycred_balance (float)`: 사용자의 현재 myCRED 포인트 잔액.

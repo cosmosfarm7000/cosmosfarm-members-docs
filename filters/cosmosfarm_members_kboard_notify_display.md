@@ -1,7 +1,7 @@
 # cosmosfarm_members_kboard_notify_display
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_KBoard.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_KBoard.class.php:36`
 - **실행 시점**: KBoard 게시판에서 알림 표시 여부를 결정할 때 실행됩니다. 게시물이나 댓글에 대한 알림을 표시할지 여부를 필터링할 수 있습니다.
 - **인자 정보**:
   - `$display (bool)`: 알림을 표시할지 여부를 나타내는 불리언 값

@@ -1,7 +1,7 @@
 # cosmosfarm_members_kboard_notify_default
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_KBoard.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_KBoard.class.php:163`
 - **실행 시점**: KBoard 게시판의 알림 기본 설정을 가져올 때 실행됩니다. 게시판별로 알림을 활성화할지 여부를 결정하는 기본값을 필터링할 수 있습니다.
 - **인자 정보**:
   - `$default (bool)`: 알림의 기본 활성화 상태. 기본적으로 true 또는 false입니다.

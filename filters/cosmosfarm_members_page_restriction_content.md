@@ -1,7 +1,7 @@
 # cosmosfarm_members_page_restriction_content
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members.class.php:2166`
 - **실행 시점**: 페이지가 제한되어 접근할 수 없을 때 표시될 콘텐츠를 구성할 때 실행됩니다. 제한된 페이지에 표시될 메시지나 UI를 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$content (string)`: 제한 페이지에 표시될 HTML 콘텐츠.

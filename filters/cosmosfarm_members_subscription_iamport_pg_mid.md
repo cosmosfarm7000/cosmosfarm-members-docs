@@ -1,7 +1,7 @@
 # cosmosfarm_members_subscription_iamport_pg_mid
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Skin.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Skin.class.php:1338`
 - **실행 시점**: 구독 결제 시 아임포트 결제 모듈의 PG MID(결제 대행사 ID)를 설정할 때 실행됩니다. 상품별로 다른 결제 대행사를 사용하도록 설정할 수 있습니다.
 - **인자 정보**:
   - `$mid (string)`: 아임포트 PG MID 값.

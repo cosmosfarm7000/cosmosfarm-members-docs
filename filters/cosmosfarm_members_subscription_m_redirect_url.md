@@ -1,7 +1,7 @@
 # cosmosfarm_members_subscription_m_redirect_url
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Skin.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Skin.class.php:1271`
 - **실행 시점**: 모바일 기기에서 구독 결제 시 결제 완료 후 리다이렉트될 URL을 설정할 때 실행됩니다. 모바일 결제 후 사용자를 보낼 목적지를 지정할 수 있습니다.
 - **인자 정보**:
   - `$url (string)`: 모바일 결제 후 리다이렉트될 URL.

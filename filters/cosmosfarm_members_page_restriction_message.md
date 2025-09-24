@@ -1,7 +1,7 @@
 # cosmosfarm_members_page_restriction_message
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members.class.php:1906`
 - **실행 시점**: 페이지가 제한되어 접근할 수 없을 때 표시될 기본 메시지를 설정할 때 실행됩니다. 페이지 제한 시 표시될 메시지를 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$message (string)`: 페이지 제한 메시지 HTML. 기본적으로 로그인 유도 메시지를 포함한 HTML입니다.

@@ -1,7 +1,7 @@
 # cosmosfarm_members_notifications_subnotify_alimtalk_args
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Notification.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Notification.class.php:124`
 - **실행 시점**: 알림이 발송될 때 알림톡 템플릿과 파라미터를 설정할 때 실행됩니다. 알림을 알림톡으로 보낼 때 사용되는 템플릿과 데이터를 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$alimtalk_args (array)`: 알림톡 발송에 사용될 인수 배열. templateCode, 파라미터 등의 정보를 포함합니다.

@@ -1,7 +1,7 @@
 # cosmosfarm_members_kboard_notify_text
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_KBoard.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_KBoard.class.php:40`
 - **실행 시점**: KBoard 게시판에서 알림 신청 버튼이나 텍스트를 표시할 때 실행됩니다. 알림 관련 텍스트를 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$text (string)`: 알림 텍스트. 기본적으로 "Notify me of new comments" 등의 번역된 텍스트입니다.

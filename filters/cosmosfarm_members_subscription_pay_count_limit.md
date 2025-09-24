@@ -1,7 +1,7 @@
 # cosmosfarm_members_subscription_pay_count_limit
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_Controller.class.php`class/Cosmosfarm_Members_Controller.class.php``
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:4492`
 - **실행 시점**: 구독 상품의 결제 횟수 제한을 확인한 후, 결제 횟수 제한을 허용할지 여부를 필터링합니다. 결제 횟수가 상품의 설정된 제한 횟수 이상인 경우 기본적으로 false로 설정되며, 이 값을 필터를 통해 변경할 수 있습니다.
 - **인자 정보**:
   - `$pay_count_limit (bool)`: 결제 횟수 제한을 허용할지 여부. true인 경우 결제를 허용하고, false인 경우 결제를 제한합니다. 기본적으로 상품의 결제 횟수 제한을 초과하면 false로 설정됩니다.

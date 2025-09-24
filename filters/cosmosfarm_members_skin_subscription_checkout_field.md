@@ -1,7 +1,7 @@
 # cosmosfarm_members_skin_subscription_checkout_field
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Skin.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Skin.class.php:1397`
 - **실행 시점**: 구독 결제 페이지에서 각 입력 필드를 렌더링할 때 실행됩니다. 결제 폼의 필드 속성(플레이스홀더, 클래스 등)을 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$field (object)`: 결제 필드 객체. name, type, placeholder, value 등의 속성을 포함합니다.

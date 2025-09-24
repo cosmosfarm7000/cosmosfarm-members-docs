@@ -1,7 +1,7 @@
 # cosmosfarm_members_notifications_read_result
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:5236`
 - **실행 시점**: 사용자가 알림을 읽음으로 표시한 후, 읽음 처리 결과를 처리할 때 실행됩니다. 알림 읽음 처리 성공/실패 상태를 필터링할 수 있습니다.
 - **인자 정보**:
   - `$result (object)`: 알림 읽음 처리 결과 객체. success (bool), message (string) 등의 속성을 포함합니다.

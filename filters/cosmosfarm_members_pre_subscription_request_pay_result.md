@@ -1,7 +1,7 @@
 # cosmosfarm_members_pre_subscription_request_pay_result
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:3454`
 - **실행 시점**: 구독 결제 요청을 처리하기 전에 유효성 검사 등의 결과를 필터링할 때 실행됩니다. 결제 요청 전 검증 로직의 결과를 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$result (object)`: 결제 요청 전 검증 결과 객체. success (bool), message (string) 등의 속성을 포함합니다.

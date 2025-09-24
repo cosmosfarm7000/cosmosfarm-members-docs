@@ -1,7 +1,7 @@
 # cosmosfarm_members_redeem_point_coupon_redirect
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:5554`
 - **실행 시점**: 사용자가 포인트 쿠폰을 사용한 후 리다이렉트될 URL을 결정할 때 실행됩니다. 쿠폰 사용 후 사용자를 보낼 목적지를 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$redirect_to (string)`: 쿠폰 사용 후 리다이렉트될 URL.

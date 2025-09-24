@@ -1,7 +1,7 @@
 # cosmosfarm_members_subscription_register_card_result
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_Controller.class.php:3375`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:3375`
 - **실행 시점**: 카드 등록이 완료된 후, 결과가 반환되기 전에 실행됩니다. 결제 수단 등록 과정에서 카드 등록 결과를 필터링할 수 있습니다.
 - **인자 정보**:
   - `$result (object|array)`: 카드 등록 결과를 담은 객체 또는 배열입니다. 일반적으로 다음과 같은 속성을 포함합니다:

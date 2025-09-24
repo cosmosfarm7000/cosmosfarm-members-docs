@@ -1,7 +1,7 @@
 # cosmosfarm_members_page_restriction_login_message
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members.class.php:1907`
 - **실행 시점**: 페이지가 제한되어 로그인해야 할 때 표시될 메시지를 설정할 때 실행됩니다. 로그인 유도 메시지를 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$message (string)`: 로그인 메시지 텍스트. 기본적으로 "Log in to view this page." 등의 번역된 텍스트입니다.

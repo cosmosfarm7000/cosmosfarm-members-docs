@@ -1,7 +1,7 @@
 # cosmosfarm_members_after_coupon_calculate_price
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_Controller.class.php`class/Cosmosfarm_Members_Controller.class.php``
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:3579`
 - **실행 시점**: 쿠폰 적용 후 최종 계산된 가격을 필터링합니다. (교정된 정식 훅명)
 - **인자 정보**:
   - `$first_price (float|int)`: 쿠폰 적용 후 계산된 최종 가격 (결제할 금액). 이 값은 상품의 원래 가격에 옵션 가격을 더한 후 쿠폰 할인을 적용한 결과값입니다. 음수나 0이 될 수 있으며, 결제 처리 시 검증됩니다.

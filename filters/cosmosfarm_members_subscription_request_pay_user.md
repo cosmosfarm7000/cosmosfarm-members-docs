@@ -1,7 +1,7 @@
 # cosmosfarm_members_subscription_request_pay_user
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_Controller.class.php`class/Cosmosfarm_Members_Controller.class.php``
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:4069`
 - **실행 시점**: 구독 결제 요청 시 사용자 객체를 필터링합니다.
 - **인자 정보**:
   - `$user (WP_User)`: WordPress 사용자 객체.

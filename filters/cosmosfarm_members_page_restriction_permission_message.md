@@ -1,7 +1,7 @@
 # cosmosfarm_members_page_restriction_permission_message
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members.class.php:1909`
 - **실행 시점**: 페이지가 제한되어 권한이 부족할 때 표시될 메시지를 설정할 때 실행됩니다. 권한 부족 시 표시될 메시지를 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$message (string)`: 권한 부족 메시지 HTML. 기본적으로 권한 부족 안내 메시지를 포함한 HTML입니다.

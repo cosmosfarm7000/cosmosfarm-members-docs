@@ -1,7 +1,7 @@
 # cosmosfarm_members_subscription_again_point_to_apply
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:4545`
 - **실행 시점**: 구독 재결제 시 사용자가 사용할 수 있는 포인트 잔액을 계산할 때 실행됩니다. 재결제에서 사용할 포인트 금액을 제한하거나 조정할 수 있습니다.
 - **인자 정보**:
   - `$mycred_balance (float)`: 사용자의 현재 포인트 잔액.

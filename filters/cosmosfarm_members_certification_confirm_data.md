@@ -1,7 +1,7 @@
 # cosmosfarm_members_certification_confirm_data
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_Controller.class.php:3242`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:3242`
 - **실행 시점**: 본인인증 확인 후 인증 데이터를 필터링합니다. 아임포트 인증 API로부터 받은 사용자 인증 정보를 추가 처리하거나 수정할 수 있습니다.
 - **인자 정보**:
   - `$certification (object)`: 아임포트 인증 API에서 반환된 인증 데이터 객체. 인증 성공/실패 상태, 사용자 정보(이름, 생년월일, 휴대폰번호 등), 인증 번호, 그리고 기타 인증 관련 메타데이터를 포함합니다. 이 객체는 아임포트 API의 응답 구조를 따르며, 인증 결과를 확인하고 추가 처리를 위해 사용됩니다.

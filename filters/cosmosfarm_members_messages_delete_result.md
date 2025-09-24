@@ -1,7 +1,7 @@
 # cosmosfarm_members_messages_delete_result
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:5425`
 - **실행 시점**: 사용자가 메시지를 삭제한 후, 삭제 결과를 처리할 때 실행됩니다. 메시지 삭제 성공/실패 상태를 필터링할 수 있습니다.
 - **인자 정보**:
   - `$result (object)`: 메시지 삭제 결과 객체. success (bool), message (string) 등의 속성을 포함합니다.

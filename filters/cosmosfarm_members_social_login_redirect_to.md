@@ -1,7 +1,7 @@
 # cosmosfarm_members_social_login_redirect_to
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:3064`
 - **실행 시점**: 사용자가 소셜 로그인을 통해 인증된 후 리다이렉트될 URL을 결정할 때 실행됩니다. 소셜 로그인 성공 후 사용자를 보낼 목적지를 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$redirect_to (string)`: 소셜 로그인 후 리다이렉트될 URL.

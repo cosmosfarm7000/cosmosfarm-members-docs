@@ -1,7 +1,7 @@
 # cosmosfarm_members_menu_items
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members.class.php:785`
 - **실행 시점**: WordPress 관리자 메뉴에서 Cosmosfarm Members 관련 메뉴 항목들을 설정할 때 실행됩니다. 플러그인의 관리자 메뉴를 추가하거나 수정할 수 있습니다.
 - **인자 정보**:
   - `$menu_items (array)`: 메뉴 항목들의 연관배열. 각 키는 메뉴 슬러그, 값은 메뉴 정보를 담은 배열 (title, url, capability 등)

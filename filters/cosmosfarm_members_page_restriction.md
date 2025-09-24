@@ -1,7 +1,7 @@
 # cosmosfarm_members_page_restriction
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members.class.php:2115`
 - **실행 시점**: 페이지 접근 제한을 확인할 때 실행됩니다. 사용자가 특정 페이지에 접근할 수 있는지 여부를 결정하는 로직을 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$page_restriction (bool)`: 페이지 제한 여부. true면 제한됨, false면 제한되지 않음.

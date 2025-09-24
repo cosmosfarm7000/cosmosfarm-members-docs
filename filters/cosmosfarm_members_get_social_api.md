@@ -1,7 +1,7 @@
 # cosmosfarm_members_get_social_api
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_Controller.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:3124`
 - **실행 시점**: 소셜 로그인 채널에 대한 API 객체를 로드할 때 실행됩니다.
 - **인자 정보**:
   - `$api (object|false)`: 소셜 로그인 API 객체. 지원되지 않는 채널인 경우 false입니다.

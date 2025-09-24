@@ -1,7 +1,7 @@
 # cosmosfarm_members_template_social_buttons
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members.class.php:956`
 - **실행 시점**: 소셜 로그인 버튼 템플릿 파일 경로를 결정합니다.
 - **인자 정보**:
   - `$file_path (string)`: 소셜 버튼 템플릿 파일의 절대 경로

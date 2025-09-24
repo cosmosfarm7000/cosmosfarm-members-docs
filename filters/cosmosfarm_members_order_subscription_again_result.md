@@ -1,7 +1,7 @@
 # cosmosfarm_members_order_subscription_again_result
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:1629`
 - **실행 시점**: 구독 상품의 재결제가 완료된 후, 결과를 처리할 때 실행됩니다. 재결제 성공/실패 상태를 필터링할 수 있습니다.
 - **인자 정보**:
   - `$result (object)`: 구독 재결제 결과 객체. success (bool), message (string) 등의 속성을 포함합니다.

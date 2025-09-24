@@ -1,7 +1,7 @@
 # cosmosfarm_members_shortcode_users_page_layout
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Page_Builder.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Page_Builder.class.php:135`
 - **실행 시점**: `[cosmosfarm_members_users]` 숏코드가 실행되어 사용자 목록 페이지를 렌더링할 때 실행됩니다. 사용자 목록 페이지의 전체 레이아웃을 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$layout (string)`: 사용자 목록 페이지의 HTML 레이아웃.

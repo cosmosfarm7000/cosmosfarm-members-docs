@@ -1,7 +1,7 @@
 # cosmosfarm_members_subscription_again_failure_email_args
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:4782`
 - **실행 시점**: 구독 재결제가 실패한 경우 발송될 이메일 내용을 설정할 때 실행됩니다. 재결제 실패 알림 이메일의 제목과 내용을 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$args (array)`: 이메일 발송에 사용될 인수 배열. 'to' (수신자 이메일), 'subject' (제목), 'message' (내용) 등의 키를 포함합니다.

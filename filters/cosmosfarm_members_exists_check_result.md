@@ -1,7 +1,7 @@
 # cosmosfarm_members_exists_check_result
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_Controller.class.php:5228`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:5212`
 - **실행 시점**: AJAX를 통해 메타 정보 존재 여부를 확인한 후 결과를 필터링합니다. 사용자 등록 시 중복 확인 결과에 대한 추가 검증이나 메시지 커스터마이징을 수행할 수 있습니다.
 - **인자 정보**:
   - `$result (array)`: 존재 여부 확인 결과 배열. 다음과 같은 키를 포함합니다: 'exists'(boolean - 값이 존재하면 true, 아니면 false), 'meta_key'(string - 확인한 메타 키), 'meta_value'(string - 확인한 메타 값), 'message'(string - 사용자에게 표시할 메시지). 이 배열을 수정하여 확인 결과를 변경하거나 메시지를 커스터마이징할 수 있습니다.

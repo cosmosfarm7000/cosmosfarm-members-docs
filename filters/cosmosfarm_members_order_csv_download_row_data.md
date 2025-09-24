@@ -1,7 +1,7 @@
 # cosmosfarm_members_order_csv_download_row_data
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:2048`
 - **실행 시점**: 주문 데이터를 CSV로 다운로드할 때 각 행의 데이터를 구성할 때 실행됩니다. CSV 파일의 각 행에 포함될 데이터를 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$row_data (array)`: CSV 행 데이터 배열. 각 키는 컬럼 이름, 값은 해당 셀의 데이터입니다.

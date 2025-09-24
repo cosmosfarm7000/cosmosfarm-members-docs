@@ -2,115 +2,181 @@
 
 ## Hook Index
 
-- [cosmosfarm_members_after_coupon_calculate_price](filters/cosmosfarm_members_after_coupon_calculate_price.md) - 쿠폰 적용 후 최종 계산된 가격을 필터링
-- [cosmosfarm_members_alimtalk_template_parameter](filters/cosmosfarm_members_alimtalk_template_parameter.md) - 알림톡 템플릿 파라미터를 필터링
-- [cosmosfarm_members_category_restriction](filters/cosmosfarm_members_category_restriction.md) - 카테고리 제한 여부를 필터링
-- [cosmosfarm_members_certification_confirm_data](filters/cosmosfarm_members_certification_confirm_data.md) - 본인 인증 확인 데이터를 필터링
-- [cosmosfarm_members_closed_site_allow_pages](filters/cosmosfarm_members_closed_site_allow_pages.md) - 사이트 폐쇄 시 허용될 페이지 목록을 필터링
-- [cosmosfarm_members_comments_notify_default](filters/cosmosfarm_members_comments_notify_default.md) - 댓글 알림 기본값을 필터링
-- [cosmosfarm_members_comments_notify_display](filters/cosmosfarm_members_comments_notify_display.md) - 댓글 알림 표시 여부를 필터링
-- [cosmosfarm_members_comments_notify_insert](filters/cosmosfarm_members_comments_notify_insert.md) - 댓글 삽입 시 알림 데이터를 필터링
-- [cosmosfarm_members_comments_notify_text](filters/cosmosfarm_members_comments_notify_text.md) - 댓글 알림 텍스트를 필터링
-- [cosmosfarm_members_exists_check_result](filters/cosmosfarm_members_exists_check_result.md) - 존재 여부 확인 결과를 필터링
-- [cosmosfarm_members_get_social_api](filters/cosmosfarm_members_get_social_api.md) - 소셜 API 객체를 필터링
-- [cosmosfarm_members_header_menu_current_page](filters/cosmosfarm_members_header_menu_current_page.md) - 헤더 메뉴의 현재 페이지를 필터링
-- [cosmosfarm_members_header_menu_items](filters/cosmosfarm_members_header_menu_items.md) - 헤더 메뉴 항목을 필터링
-- [cosmosfarm_members_is_continue_subscription_again](filters/cosmosfarm_members_is_continue_subscription_again.md) - 구독 재결제를 계속할지 여부를 필터링
-- [cosmosfarm_members_kboard_notify_comments_insert](filters/cosmosfarm_members_kboard_notify_comments_insert.md) - KBoard 댓글 삽입 시 알림 데이터를 필터링
-- [cosmosfarm_members_kboard_notify_default](filters/cosmosfarm_members_kboard_notify_default.md) - KBoard 알림 기본값을 필터링
-- [cosmosfarm_members_kboard_notify_display](filters/cosmosfarm_members_kboard_notify_display.md) - KBoard 알림 표시 여부를 필터링
-- [cosmosfarm_members_kboard_notify_document_insert](filters/cosmosfarm_members_kboard_notify_document_insert.md) - KBoard 문서 삽입 시 알림 데이터를 필터링
-- [cosmosfarm_members_kboard_notify_text](filters/cosmosfarm_members_kboard_notify_text.md) - KBoard 알림 텍스트를 필터링
-- [cosmosfarm_members_login_form_user_logged_in](filters/cosmosfarm_members_login_form_user_logged_in.md) - 로그인 폼에서 사용자가 로그인되어 있을 때의 레이아웃을 필터링
-- [cosmosfarm_members_login_redirect_to](filters/cosmosfarm_members_login_redirect_to.md) - 로그인 후 리다이렉트될 URL을 필터링
-- [cosmosfarm_members_menu_items](filters/cosmosfarm_members_menu_items.md) - 관리자 메뉴 항목들을 설정
-- [cosmosfarm_members_messages_delete_result](filters/cosmosfarm_members_messages_delete_result.md) - 메시지 삭제 결과를 필터링
-- [cosmosfarm_members_messages_read_result](filters/cosmosfarm_members_messages_read_result.md) - 메시지 읽음 처리 결과를 필터링
-- [cosmosfarm_members_messages_send_result](filters/cosmosfarm_members_messages_send_result.md) - 메시지 발송 결과를 필터링
-- [cosmosfarm_members_messages_subnotify_alimtalk_args](filters/cosmosfarm_members_messages_subnotify_alimtalk_args.md) - 메시지 알림 알림톡 인수를 필터링
-- [cosmosfarm_members_messages_subnotify_email_args](filters/cosmosfarm_members_messages_subnotify_email_args.md) - 메시지 알림 이메일 인수를 필터링
-- [cosmosfarm_members_messages_subnotify_sms_args](filters/cosmosfarm_members_messages_subnotify_sms_args.md) - 메시지 알림 SMS 인수를 필터링
-- [cosmosfarm_members_messages_subnotify_update_result](filters/cosmosfarm_members_messages_subnotify_update_result.md) - 메시지 구독 업데이트 결과를 필터링
-- [cosmosfarm_members_messages_unread_result](filters/cosmosfarm_members_messages_unread_result.md) - 메시지 안 읽음 처리 결과를 필터링
-- [cosmosfarm_members_notifications_delete_result](filters/cosmosfarm_members_notifications_delete_result.md) - 알림 삭제 결과를 필터링
-- [cosmosfarm_members_notifications_read_result](filters/cosmosfarm_members_notifications_read_result.md) - 알림 읽음 처리 결과를 필터링
-- [cosmosfarm_members_notifications_send_result](filters/cosmosfarm_members_notifications_send_result.md) - 알림 발송 결과를 필터링
-- [cosmosfarm_members_notifications_subnotify_alimtalk_args](filters/cosmosfarm_members_notifications_subnotify_alimtalk_args.md) - 알림 알림 알림톡 인수를 필터링
-- [cosmosfarm_members_notifications_subnotify_email_args](filters/cosmosfarm_members_notifications_subnotify_email_args.md) - 알림 알림 이메일 인수를 필터링
-- [cosmosfarm_members_notifications_subnotify_sms_args](filters/cosmosfarm_members_notifications_subnotify_sms_args.md) - 알림 알림 SMS 인수를 필터링
-- [cosmosfarm_members_notifications_subnotify_update_result](filters/cosmosfarm_members_notifications_subnotify_update_result.md) - 알림 구독 업데이트 결과를 필터링
-- [cosmosfarm_members_notifications_unread_result](filters/cosmosfarm_members_notifications_unread_result.md) - 알림 안 읽음 처리 결과를 필터링
-- [cosmosfarm_members_order_cancel_result](filters/cosmosfarm_members_order_cancel_result.md) - 주문 취소 결과를 필터링
-- [cosmosfarm_members_order_csv_download_row_data](filters/cosmosfarm_members_order_csv_download_row_data.md) - 주문 CSV 다운로드 시 각 행의 데이터를 필터링
-- [cosmosfarm_members_order_download_columns](filters/cosmosfarm_members_order_download_columns.md) - 주문 다운로드 시 컬럼 목록을 필터링
-- [cosmosfarm_members_order_download_columns_value](filters/cosmosfarm_members_order_download_columns_value.md) - 주문 다운로드 시 특정 컬럼의 값을 필터링
-- [cosmosfarm_members_order_subscription_again_result](filters/cosmosfarm_members_order_subscription_again_result.md) - 구독 재결제 결과를 필터링
-- [cosmosfarm_members_page_restriction](filters/cosmosfarm_members_page_restriction.md) - 페이지 제한 여부를 필터링
-- [cosmosfarm_members_page_restriction_content](filters/cosmosfarm_members_page_restriction_content.md) - 페이지 제한 시 표시될 콘텐츠를 필터링
-- [cosmosfarm_members_page_restriction_login_message](filters/cosmosfarm_members_page_restriction_login_message.md) - 페이지 제한 시 로그인 메시지를 필터링
-- [cosmosfarm_members_page_restriction_message](filters/cosmosfarm_members_page_restriction_message.md) - 페이지 제한 메시지를 필터링
-- [cosmosfarm_members_page_restriction_permission_message](filters/cosmosfarm_members_page_restriction_permission_message.md) - 페이지 제한 시 권한 부족 메시지를 필터링
-- [cosmosfarm_members_page_restriction_register_message](filters/cosmosfarm_members_page_restriction_register_message.md) - 페이지 제한 시 회원가입 메시지를 필터링
-- [cosmosfarm_members_pre_subscription_request_pay_result](filters/cosmosfarm_members_pre_subscription_request_pay_result.md) - 구독 결제 요청 전 결과(유효성 검사 등)를 필터링
-- [cosmosfarm_members_redeem_point_coupon_redirect](filters/cosmosfarm_members_redeem_point_coupon_redirect.md) - 포인트 쿠폰 사용 후 리다이렉트될 URL을 필터링
-- [cosmosfarm_members_register_form_policy_fields](filters/cosmosfarm_members_register_form_policy_fields.md) - 회원가입 폼의 정책 필드를 필터링
-- [cosmosfarm_members_shortcode_users_page_layout](filters/cosmosfarm_members_shortcode_users_page_layout.md) - 사용자 페이지 숏코드 레이아웃을 필터링
-- [cosmosfarm_members_shortcode_users_page_view_allow](filters/cosmosfarm_members_shortcode_users_page_view_allow.md) - 사용자 페이지 숏코드 보기 허용 여부를 필터링
-- [cosmosfarm_members_skin_subscription_checkout_field](filters/cosmosfarm_members_skin_subscription_checkout_field.md) - 구독 결제 스킨의 필드를 필터링
-- [cosmosfarm_members_social_login_redirect_to](filters/cosmosfarm_members_social_login_redirect_to.md) - 소셜 로그인 후 리다이렉트될 URL을 필터링
-- [cosmosfarm_members_subscription_again_failure_email_args](filters/cosmosfarm_members_subscription_again_failure_email_args.md) - 구독 재결제 실패 이메일 인수를 필터링
-- [cosmosfarm_members_subscription_again_point_to_apply](filters/cosmosfarm_members_subscription_again_point_to_apply.md) - 구독 재결제 시 적용될 포인트 잔액을 필터링
-- [cosmosfarm_members_subscription_again_price](filters/cosmosfarm_members_subscription_again_price.md) - 구독 재결제 가격을 필터링
-- [cosmosfarm_members_subscription_checkout_button_display_text](filters/cosmosfarm_members_subscription_checkout_button_display_text.md) - 구독 결제 버튼의 표시 텍스트를 필터링
-- [cosmosfarm_members_subscription_iamport_pg_mid](filters/cosmosfarm_members_subscription_iamport_pg_mid.md) - 아임포트 PG MID를 필터링
-- [cosmosfarm_members_subscription_m_redirect_url](filters/cosmosfarm_members_subscription_m_redirect_url.md) - 모바일 결제 리다이렉트 URL을 필터링
-- [cosmosfarm_members_subscription_pay_app_scheme](filters/cosmosfarm_members_subscription_pay_app_scheme.md) - 구독 결제 앱 스킴을 필터링
-- [cosmosfarm_members_subscription_pay_count_limit](filters/cosmosfarm_members_subscription_pay_count_limit.md) - 구독 결제 횟수 제한을 필터링
-- [cosmosfarm_members_subscription_pay_success_url](filters/cosmosfarm_members_subscription_pay_success_url.md) - 구독 결제 성공 후 리다이렉트될 URL을 필터링
-- [cosmosfarm_members_subscription_register_card_result](filters/cosmosfarm_members_subscription_register_card_result.md) - 구독 카드 등록 결과를 필터링
-- [cosmosfarm_members_subscription_request_pay_order_point_to_apply](filters/cosmosfarm_members_subscription_request_pay_order_point_to_apply.md) - 구독 결제 시 적용될 포인트 잔액을 필터링
-- [cosmosfarm_members_subscription_request_pay_result](filters/cosmosfarm_members_subscription_request_pay_result.md) - 구독 결제 요청 결과를 필터링
-- [cosmosfarm_members_subscription_request_pay_user](filters/cosmosfarm_members_subscription_request_pay_user.md) - 구독 결제 요청 시 사용자 객체를 필터링
-- [cosmosfarm_members_subscription_send_sms_again_message](filters/cosmosfarm_members_subscription_send_sms_again_message.md) - 구독 재결제 SMS 메시지를 필터링
-- [cosmosfarm_members_subscription_update_result](filters/cosmosfarm_members_subscription_update_result.md) - 구독 업데이트 결과를 필터링
-- [cosmosfarm_members_template_account_links](filters/cosmosfarm_members_template_account_links.md) - 계정 링크 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_change_password_form](filters/cosmosfarm_members_template_change_password_form.md) - 비밀번호 변경 폼 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_comments_reviews](filters/cosmosfarm_members_template_comments_reviews.md) - 댓글/리뷰 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_header](filters/cosmosfarm_members_template_header.md) - 헤더 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_login_form](filters/cosmosfarm_members_template_login_form.md) - 로그인 폼 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_login_timeout_popup](filters/cosmosfarm_members_template_login_timeout_popup.md) - 로그인 타임아웃 팝업 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_messages](filters/cosmosfarm_members_template_messages.md) - 메시지 페이지 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_messages_list](filters/cosmosfarm_members_template_messages_list.md) - 메시지 목록 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_messages_list_item](filters/cosmosfarm_members_template_messages_list_item.md) - 메시지 목록 아이템 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_notifications](filters/cosmosfarm_members_template_notifications.md) - 알림 페이지 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_notifications_list](filters/cosmosfarm_members_template_notifications_list.md) - 알림 목록 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_notifications_list_item](filters/cosmosfarm_members_template_notifications_list_item.md) - 알림 목록 아이템 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_orders](filters/cosmosfarm_members_template_orders.md) - 주문 페이지 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_orders_list](filters/cosmosfarm_members_template_orders_list.md) - 주문 목록 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_orders_list_item](filters/cosmosfarm_members_template_orders_list_item.md) - 주문 목록 아이템 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_point_list](filters/cosmosfarm_members_template_point_list.md) - 포인트 목록 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_social_buttons](filters/cosmosfarm_members_template_social_buttons.md) - 소셜 버튼 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_subscription_checkout](filters/cosmosfarm_members_template_subscription_checkout.md) - 구독 결제 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_subscription_checkout_fields](filters/cosmosfarm_members_template_subscription_checkout_fields.md) - 구독 결제 필드 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_subscription_payment_method](filters/cosmosfarm_members_template_subscription_payment_method.md) - 구독 결제 수단 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_subscription_product](filters/cosmosfarm_members_template_subscription_product.md) - 구독 상품 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_subscription_product_button](filters/cosmosfarm_members_template_subscription_product_button.md) - 구독 상품 버튼 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_subscription_product_first_free](filters/cosmosfarm_members_template_subscription_product_first_free.md) - 구독 상품 첫 달 무료 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_subscription_product_latest](filters/cosmosfarm_members_template_subscription_product_latest.md) - 최신 구독 상품 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_subscription_product_list](filters/cosmosfarm_members_template_subscription_product_list.md) - 구독 상품 목록 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_subscription_product_price](filters/cosmosfarm_members_template_subscription_product_price.md) - 구독 상품 가격 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_subscription_product_single_template](filters/cosmosfarm_members_template_subscription_product_single_template.md) - 단일 구독 상품 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_subscription_product_title](filters/cosmosfarm_members_template_subscription_product_title.md) - 구독 상품 제목 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_subscription_product_type](filters/cosmosfarm_members_template_subscription_product_type.md) - 구독 상품 유형 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_user_profile](filters/cosmosfarm_members_template_user_profile.md) - 사용자 프로필 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_users](filters/cosmosfarm_members_template_users.md) - 사용자 페이지 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_users_list](filters/cosmosfarm_members_template_users_list.md) - 사용자 목록 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_template_users_list_item](filters/cosmosfarm_members_template_users_list_item.md) - 사용자 목록 아이템 템플릿 파일 경로를 필터링
-- [cosmosfarm_members_use_login_timeout](filters/cosmosfarm_members_use_login_timeout.md) - 로그인 타임아웃 사용 여부를 필터링
-- [cosmosfarm_members_users_csv_download_add_usermeta](filters/cosmosfarm_members_users_csv_download_add_usermeta.md) - 사용자 CSV 다운로드 시 추가할 사용자 메타 필드를 필터링
-- [cosmosfarm_members_users_csv_download_columns](filters/cosmosfarm_members_users_csv_download_columns.md) - 사용자 CSV 다운로드 시 컬럼 목록을 필터링
-- [cosmosfarm_members_users_csv_download_row_data](filters/cosmosfarm_members_users_csv_download_row_data.md) - 사용자 CSV 다운로드 시 각 행의 데이터를 필터링
-- [cosmosfarm_members_users_csv_download_usermeta_value](filters/cosmosfarm_members_users_csv_download_usermeta_value.md) - 사용자 CSV 다운로드 시 특정 사용자 메타 필드의 값을 필터링
+- [cosmosfarm_members_after_coupon_calculate_price](filters/cosmosfarm_members_after_coupon_calculate_price.md)
+- [cosmosfarm_members_after_profile_link_rows](filters/cosmosfarm_members_after_profile_link_rows.md) - Cosmosfarm_Members_Page_Builder::member_links_args() 메서드 내부에서 $rows 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_alimtalk_every_recipient_list](filters/cosmosfarm_members_alimtalk_every_recipient_list.md) - Cosmosfarm_Members_Sms_Nhn::send_every_execute_alimtalk() 메서드 내부에서 $recipient_list 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_alimtalk_template_parameter](filters/cosmosfarm_members_alimtalk_template_parameter.md)
+- [cosmosfarm_members_alimtalk_template_paremeter](filters/cosmosfarm_members_alimtalk_template_paremeter.md) - Cosmosfarm_Members_Sms_Nhn::send_execute_alimtalk() 메서드 내부에서 $template_parameter 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_before_profile_link_rows](filters/cosmosfarm_members_before_profile_link_rows.md) - Cosmosfarm_Members_Page_Builder::member_links_args() 메서드 내부에서 $rows 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_category_restriction](filters/cosmosfarm_members_category_restriction.md)
+- [cosmosfarm_members_certification_confirm_data](filters/cosmosfarm_members_certification_confirm_data.md)
+- [cosmosfarm_members_closed_site_allow_pages](filters/cosmosfarm_members_closed_site_allow_pages.md)
+- [cosmosfarm_members_comments_notify_default](filters/cosmosfarm_members_comments_notify_default.md)
+- [cosmosfarm_members_comments_notify_display](filters/cosmosfarm_members_comments_notify_display.md)
+- [cosmosfarm_members_comments_notify_insert](filters/cosmosfarm_members_comments_notify_insert.md)
+- [cosmosfarm_members_comments_notify_text](filters/cosmosfarm_members_comments_notify_text.md)
+- [cosmosfarm_members_courier_company_list](filters/cosmosfarm_members_courier_company_list.md) - cosmosfarm_members_courier_company_list() 함수 내부에서 $courier_company_list 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_currency_format](filters/cosmosfarm_members_currency_format.md) - cosmosfarm_members_currency_format() 함수 내부에서 $format 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_dormant_member_alert_email](filters/cosmosfarm_members_dormant_member_alert_email.md) - cosmosfarm_members_dormant_member() 함수 내부에서 $value 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_exists_check_result](filters/cosmosfarm_members_exists_check_result.md)
+- [cosmosfarm_members_friendtalk_every_recipient_list](filters/cosmosfarm_members_friendtalk_every_recipient_list.md) - Cosmosfarm_Members_Sms_Nhn::send_every_execute_friendtalk() 메서드 내부에서 $recipient_list 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_friendtalk_every_recipient_list_v2](filters/cosmosfarm_members_friendtalk_every_recipient_list_v2.md) - Cosmosfarm_Members_Sms_Nhn::send_every_execute_friendtalk_v2() 메서드 내부에서 $recipient_list 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_get_social_api](filters/cosmosfarm_members_get_social_api.md)
+- [cosmosfarm_members_header_menu_current_page](filters/cosmosfarm_members_header_menu_current_page.md)
+- [cosmosfarm_members_header_menu_items](filters/cosmosfarm_members_header_menu_items.md)
+- [cosmosfarm_members_init_values_inicis_mobile](filters/cosmosfarm_members_init_values_inicis_mobile.md) - 해당 파일 내에서 $pg 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_init_values_inicis_pc](filters/cosmosfarm_members_init_values_inicis_pc.md) - 해당 파일 내에서 $pg 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_init_values_welcomepay_pc](filters/cosmosfarm_members_init_values_welcomepay_pc.md) - 해당 파일 내에서 $pg 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_is_continue_subscription_again](filters/cosmosfarm_members_is_continue_subscription_again.md)
+- [cosmosfarm_members_kboard_notify_comments_insert](filters/cosmosfarm_members_kboard_notify_comments_insert.md)
+- [cosmosfarm_members_kboard_notify_default](filters/cosmosfarm_members_kboard_notify_default.md)
+- [cosmosfarm_members_kboard_notify_display](filters/cosmosfarm_members_kboard_notify_display.md)
+- [cosmosfarm_members_kboard_notify_document_insert](filters/cosmosfarm_members_kboard_notify_document_insert.md)
+- [cosmosfarm_members_kboard_notify_text](filters/cosmosfarm_members_kboard_notify_text.md)
+- [cosmosfarm_members_locale](filters/cosmosfarm_members_locale.md) - get_cosmosfarm_members_locale() 함수 내부에서 $value 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_localize_strings](filters/cosmosfarm_members_localize_strings.md) - cosmosfarm_members_scripts() 함수 내부에서 $localize 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_login_form_user_logged_in](filters/cosmosfarm_members_login_form_user_logged_in.md)
+- [cosmosfarm_members_login_redirect_to](filters/cosmosfarm_members_login_redirect_to.md)
+- [cosmosfarm_members_menu_items](filters/cosmosfarm_members_menu_items.md)
+- [cosmosfarm_members_messages_delete_result](filters/cosmosfarm_members_messages_delete_result.md)
+- [cosmosfarm_members_messages_list_query_args](filters/cosmosfarm_members_messages_list_query_args.md) - 해당 파일 내에서 $args 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_messages_read_result](filters/cosmosfarm_members_messages_read_result.md)
+- [cosmosfarm_members_messages_send_result](filters/cosmosfarm_members_messages_send_result.md)
+- [cosmosfarm_members_messages_subnotify_alimtalk_args](filters/cosmosfarm_members_messages_subnotify_alimtalk_args.md)
+- [cosmosfarm_members_messages_subnotify_email_args](filters/cosmosfarm_members_messages_subnotify_email_args.md)
+- [cosmosfarm_members_messages_subnotify_sms_args](filters/cosmosfarm_members_messages_subnotify_sms_args.md)
+- [cosmosfarm_members_messages_subnotify_update_result](filters/cosmosfarm_members_messages_subnotify_update_result.md)
+- [cosmosfarm_members_messages_unread_result](filters/cosmosfarm_members_messages_unread_result.md)
+- [cosmosfarm_members_naver_profile_url](filters/cosmosfarm_members_naver_profile_url.md) - Cosmosfarm_Members_API_Naver::get_profile() 메서드 내부에서 $profile_email 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_notifications_delete_result](filters/cosmosfarm_members_notifications_delete_result.md)
+- [cosmosfarm_members_notifications_list_query_args](filters/cosmosfarm_members_notifications_list_query_args.md) - 해당 파일 내에서 $args 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_notifications_read_result](filters/cosmosfarm_members_notifications_read_result.md)
+- [cosmosfarm_members_notifications_send_result](filters/cosmosfarm_members_notifications_send_result.md)
+- [cosmosfarm_members_notifications_subnotify_alimtalk_args](filters/cosmosfarm_members_notifications_subnotify_alimtalk_args.md)
+- [cosmosfarm_members_notifications_subnotify_email_args](filters/cosmosfarm_members_notifications_subnotify_email_args.md)
+- [cosmosfarm_members_notifications_subnotify_sms_args](filters/cosmosfarm_members_notifications_subnotify_sms_args.md)
+- [cosmosfarm_members_notifications_subnotify_update_result](filters/cosmosfarm_members_notifications_subnotify_update_result.md)
+- [cosmosfarm_members_notifications_unread_result](filters/cosmosfarm_members_notifications_unread_result.md)
+- [cosmosfarm_members_order_bulk_actions](filters/cosmosfarm_members_order_bulk_actions.md) - Cosmosfarm_Members_Subscription_Order_Table::get_bulk_actions() 메서드 내부에서 $value 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_order_cancel_result](filters/cosmosfarm_members_order_cancel_result.md)
+- [cosmosfarm_members_order_csv_download_row_data](filters/cosmosfarm_members_order_csv_download_row_data.md)
+- [cosmosfarm_members_order_download_columns](filters/cosmosfarm_members_order_download_columns.md)
+- [cosmosfarm_members_order_download_columns_value](filters/cosmosfarm_members_order_download_columns_value.md)
+- [cosmosfarm_members_order_list_table_columns](filters/cosmosfarm_members_order_list_table_columns.md) - Cosmosfarm_Members_Subscription_Order_Table::get_columns() 메서드 내부에서 $columns 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_order_list_table_query_args](filters/cosmosfarm_members_order_list_table_query_args.md) - Cosmosfarm_Members_Subscription_Order_Table::prepare_items() 메서드 내부에서 $args 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_order_subscription_again_result](filters/cosmosfarm_members_order_subscription_again_result.md)
+- [cosmosfarm_members_orders_list_query_args](filters/cosmosfarm_members_orders_list_query_args.md) - 해당 파일 내에서 $args 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_page_restriction](filters/cosmosfarm_members_page_restriction.md)
+- [cosmosfarm_members_page_restriction_content](filters/cosmosfarm_members_page_restriction_content.md)
+- [cosmosfarm_members_page_restriction_login_message](filters/cosmosfarm_members_page_restriction_login_message.md)
+- [cosmosfarm_members_page_restriction_message](filters/cosmosfarm_members_page_restriction_message.md)
+- [cosmosfarm_members_page_restriction_permission_message](filters/cosmosfarm_members_page_restriction_permission_message.md)
+- [cosmosfarm_members_page_restriction_register_message](filters/cosmosfarm_members_page_restriction_register_message.md)
+- [cosmosfarm_members_policy_privacy](filters/cosmosfarm_members_policy_privacy.md) - cosmosfarm_members_policy_privacy() 함수 내부에서 $value 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_policy_service](filters/cosmosfarm_members_policy_service.md) - cosmosfarm_members_policy_service() 함수 내부에서 $value 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_pre_subscription_request_pay_result](filters/cosmosfarm_members_pre_subscription_request_pay_result.md)
+- [cosmosfarm_members_product_admin_field_template_list](filters/cosmosfarm_members_product_admin_field_template_list.md) - Cosmosfarm_Members_Subscription_Product::get_admin_field_template_list() 메서드 내부에서 $list 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_redeem_point_coupon_redirect](filters/cosmosfarm_members_redeem_point_coupon_redirect.md)
+- [cosmosfarm_members_register_form_policy_fields](filters/cosmosfarm_members_register_form_policy_fields.md)
+- [cosmosfarm_members_send_confirmed_email](filters/cosmosfarm_members_send_confirmed_email.md) - cosmosfarm_members_send_confirmed_email() 함수 내부에서 $confirmed_email 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_send_every_limit](filters/cosmosfarm_members_send_every_limit.md) - Cosmosfarm_Members_Sms::send_every() 메서드 내부에서 $value 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_send_verify_email](filters/cosmosfarm_members_send_verify_email.md) - cosmosfarm_members_send_verify_email() 함수 내부에서 $verify_email 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_shortcode_users_page_layout](filters/cosmosfarm_members_shortcode_users_page_layout.md)
+- [cosmosfarm_members_shortcode_users_page_view_allow](filters/cosmosfarm_members_shortcode_users_page_view_allow.md)
+- [cosmosfarm_members_skin_list](filters/cosmosfarm_members_skin_list.md) - cosmosfarm_members_skins() 함수 내부에서 $ist 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_skin_subscription_checkout_field](filters/cosmosfarm_members_skin_subscription_checkout_field.md)
+- [cosmosfarm_members_skin_subscription_checkout_title](filters/cosmosfarm_members_skin_subscription_checkout_title.md) - Cosmosfarm_Members_Skin::subscription_checkout_title() 메서드 내부에서 $title 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_sms_send_data](filters/cosmosfarm_members_sms_send_data.md) - Cosmosfarm_Members_Sms::send() 메서드 내부에서 $phone 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_social_login_redirect_to](filters/cosmosfarm_members_social_login_redirect_to.md)
+- [cosmosfarm_members_status_format](filters/cosmosfarm_members_status_format.md) - Cosmosfarm_Members_Subscription_Order::status_format() 메서드 내부에서 $status_format 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_again_failure_email_args](filters/cosmosfarm_members_subscription_again_failure_email_args.md)
+- [cosmosfarm_members_subscription_again_point_to_apply](filters/cosmosfarm_members_subscription_again_point_to_apply.md)
+- [cosmosfarm_members_subscription_again_price](filters/cosmosfarm_members_subscription_again_price.md)
+- [cosmosfarm_members_subscription_cancellation_refund_policy_content](filters/cosmosfarm_members_subscription_cancellation_refund_policy_content.md) - get_cosmosfarm_members_subscription_cancellation_refund_policy_content() 함수 내부에서 $content 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_checkout_button_display_text](filters/cosmosfarm_members_subscription_checkout_button_display_text.md)
+- [cosmosfarm_members_subscription_first_free_format](filters/cosmosfarm_members_subscription_first_free_format.md) - Cosmosfarm_Members_Subscription_Order::subscription_first_free_format() 메서드 내부에서 $subscription_first_free 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_iamport_pg_list](filters/cosmosfarm_members_subscription_iamport_pg_list.md) - get_cosmosfarm_members_subscription_iamport_pg_list() 함수 내부에서 $iamport_pg_list 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_iamport_pg_mid](filters/cosmosfarm_members_subscription_iamport_pg_mid.md)
+- [cosmosfarm_members_subscription_is_use_earn_points](filters/cosmosfarm_members_subscription_is_use_earn_points.md) - Cosmosfarm_Members_Subscription_Order::is_use_earn_points() 메서드 내부에서 $is_use_earn_points 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_m_redirect_url](filters/cosmosfarm_members_subscription_m_redirect_url.md)
+- [cosmosfarm_members_subscription_next_format](filters/cosmosfarm_members_subscription_next_format.md) - Cosmosfarm_Members_Subscription_Order::subscription_next_format() 메서드 내부에서 $subscription_next 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_order_again_error_buttons](filters/cosmosfarm_members_subscription_order_again_error_buttons.md) - cosmosfarm_members_admin_notices() 함수 내부에서 $row2 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_order_again_error_notice](filters/cosmosfarm_members_subscription_order_again_error_notice.md) - cosmosfarm_members_admin_notices() 함수 내부에서 $error_notice 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_order_again_error_title](filters/cosmosfarm_members_subscription_order_again_error_title.md) - cosmosfarm_members_admin_notices() 함수 내부에서 $row1 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_order_again_error_title_with_count](filters/cosmosfarm_members_subscription_order_again_error_title_with_count.md) - cosmosfarm_members_admin_notices() 함수 내부에서 $row1 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_order_first_price](filters/cosmosfarm_members_subscription_order_first_price.md) - Cosmosfarm_Members_Subscription_Order::first_price() 메서드 내부에서 $first_price 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_order_next_price](filters/cosmosfarm_members_subscription_order_next_price.md) - Cosmosfarm_Members_Subscription_Order::next_price() 메서드 내부에서 $next_price 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_order_option_fields](filters/cosmosfarm_members_subscription_order_option_fields.md) - Cosmosfarm_Members_Subscription_Order::option_fields() 메서드 내부에서 $option_fields 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_order_{$name}](filters/cosmosfarm_members_subscription_order_{$name}.md) - Cosmosfarm_Members_Subscription_Order::__get() 메서드 내부에서 $name 값을 반환하기 전에 호출되어 최종 값을 조정할 수 있습니다.
+- [cosmosfarm_members_subscription_pay_app_scheme](filters/cosmosfarm_members_subscription_pay_app_scheme.md)
+- [cosmosfarm_members_subscription_pay_count_limit](filters/cosmosfarm_members_subscription_pay_count_limit.md)
+- [cosmosfarm_members_subscription_pay_success_url](filters/cosmosfarm_members_subscription_pay_success_url.md)
+- [cosmosfarm_members_subscription_pg_type](filters/cosmosfarm_members_subscription_pg_type.md) - get_cosmosfarm_members_subscription_pg_type() 함수 내부에서 $subscription_pg_type 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_active](filters/cosmosfarm_members_subscription_product_active.md) - Cosmosfarm_Members_Subscription_Order::subscription_active() 메서드 내부에서 $subscription_active 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_balance](filters/cosmosfarm_members_subscription_product_balance.md) - Cosmosfarm_Members_Subscription_Order::balance() 메서드 내부에서 $balance 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_before_coupon_price](filters/cosmosfarm_members_subscription_product_before_coupon_price.md) - Cosmosfarm_Members_Subscription_Order::before_coupon_price() 메서드 내부에서 $before_coupon_price 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_coupon_price](filters/cosmosfarm_members_subscription_product_coupon_price.md) - Cosmosfarm_Members_Subscription_Order::coupon_price() 메서드 내부에서 $coupon_price 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_fields](filters/cosmosfarm_members_subscription_product_fields.md) - Cosmosfarm_Members_Subscription_Product::fields() 메서드 내부에서 $fields 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_first_free](filters/cosmosfarm_members_subscription_product_first_free.md) - Cosmosfarm_Members_Subscription_Product::is_subscription_first_free() 메서드 내부에서 $first_free 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_first_price](filters/cosmosfarm_members_subscription_product_first_price.md) - Cosmosfarm_Members_Subscription_Product::first_price() 메서드 내부에서 $first_price 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_get_meta_fields](filters/cosmosfarm_members_subscription_product_get_meta_fields.md) - Cosmosfarm_Members_Subscription_Order::get_meta_fields() 메서드 내부에서 $fields 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_is_coupon_available](filters/cosmosfarm_members_subscription_product_is_coupon_available.md) - Cosmosfarm_Members_Subscription_Product::is_coupon_available() 메서드 내부에서 $coupon_available 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_option_fields](filters/cosmosfarm_members_subscription_product_option_fields.md) - Cosmosfarm_Members_Subscription_Product::option_fields() 메서드 내부에서 $option_fields 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_option_subtitle](filters/cosmosfarm_members_subscription_product_option_subtitle.md) - Cosmosfarm_Members_Subscription_Product::option_subtitle() 메서드 내부에서 $option_subtitle 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_option_title](filters/cosmosfarm_members_subscription_product_option_title.md) - Cosmosfarm_Members_Subscription_Product::option_title() 메서드 내부에서 $option_title 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_pg_type](filters/cosmosfarm_members_subscription_product_pg_type.md) - Cosmosfarm_Members_Subscription_Product::get_subscription_pg_type() 메서드 내부에서 $subscription_pg_type 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_price](filters/cosmosfarm_members_subscription_product_price.md) - Cosmosfarm_Members_Subscription_Order::price() 메서드 내부에서 $price 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_type](filters/cosmosfarm_members_subscription_product_type.md) - Cosmosfarm_Members_Subscription_Order::subscription_type() 메서드 내부에서 $subscription_type 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_type_format](filters/cosmosfarm_members_subscription_product_type_format.md) - Cosmosfarm_Members_Subscription_Order::subscription_type_format() 메서드 내부에서 $subscription_type_format 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_product_{$name}](filters/cosmosfarm_members_subscription_product_{$name}.md) - Cosmosfarm_Members_Subscription_Product::__get() 메서드 내부에서 $name 값을 반환하기 전에 호출되어 최종 값을 조정할 수 있습니다.
+- [cosmosfarm_members_subscription_register_card_result](filters/cosmosfarm_members_subscription_register_card_result.md)
+- [cosmosfarm_members_subscription_request_pay_order_point_to_apply](filters/cosmosfarm_members_subscription_request_pay_order_point_to_apply.md)
+- [cosmosfarm_members_subscription_request_pay_result](filters/cosmosfarm_members_subscription_request_pay_result.md)
+- [cosmosfarm_members_subscription_request_pay_user](filters/cosmosfarm_members_subscription_request_pay_user.md)
+- [cosmosfarm_members_subscription_send_sms_again_message](filters/cosmosfarm_members_subscription_send_sms_again_message.md)
+- [cosmosfarm_members_subscription_status_display](filters/cosmosfarm_members_subscription_status_display.md) - cosmosfarm_members_subscription_status_display() 함수 내부에서 $dispay_message 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_subscription_update_result](filters/cosmosfarm_members_subscription_update_result.md)
+- [cosmosfarm_members_template_account_links](filters/cosmosfarm_members_template_account_links.md)
+- [cosmosfarm_members_template_change_password_form](filters/cosmosfarm_members_template_change_password_form.md)
+- [cosmosfarm_members_template_comments_reviews](filters/cosmosfarm_members_template_comments_reviews.md)
+- [cosmosfarm_members_template_header](filters/cosmosfarm_members_template_header.md)
+- [cosmosfarm_members_template_login_form](filters/cosmosfarm_members_template_login_form.md)
+- [cosmosfarm_members_template_login_timeout_popup](filters/cosmosfarm_members_template_login_timeout_popup.md)
+- [cosmosfarm_members_template_messages](filters/cosmosfarm_members_template_messages.md)
+- [cosmosfarm_members_template_messages_list](filters/cosmosfarm_members_template_messages_list.md)
+- [cosmosfarm_members_template_messages_list_item](filters/cosmosfarm_members_template_messages_list_item.md)
+- [cosmosfarm_members_template_notifications](filters/cosmosfarm_members_template_notifications.md)
+- [cosmosfarm_members_template_notifications_list](filters/cosmosfarm_members_template_notifications_list.md)
+- [cosmosfarm_members_template_notifications_list_item](filters/cosmosfarm_members_template_notifications_list_item.md)
+- [cosmosfarm_members_template_orders](filters/cosmosfarm_members_template_orders.md)
+- [cosmosfarm_members_template_orders_list](filters/cosmosfarm_members_template_orders_list.md)
+- [cosmosfarm_members_template_orders_list_item](filters/cosmosfarm_members_template_orders_list_item.md)
+- [cosmosfarm_members_template_point_list](filters/cosmosfarm_members_template_point_list.md)
+- [cosmosfarm_members_template_social_buttons](filters/cosmosfarm_members_template_social_buttons.md)
+- [cosmosfarm_members_template_subscription_checkout](filters/cosmosfarm_members_template_subscription_checkout.md)
+- [cosmosfarm_members_template_subscription_checkout_fields](filters/cosmosfarm_members_template_subscription_checkout_fields.md)
+- [cosmosfarm_members_template_subscription_payment_method](filters/cosmosfarm_members_template_subscription_payment_method.md)
+- [cosmosfarm_members_template_subscription_product](filters/cosmosfarm_members_template_subscription_product.md)
+- [cosmosfarm_members_template_subscription_product_button](filters/cosmosfarm_members_template_subscription_product_button.md)
+- [cosmosfarm_members_template_subscription_product_first_free](filters/cosmosfarm_members_template_subscription_product_first_free.md)
+- [cosmosfarm_members_template_subscription_product_latest](filters/cosmosfarm_members_template_subscription_product_latest.md)
+- [cosmosfarm_members_template_subscription_product_list](filters/cosmosfarm_members_template_subscription_product_list.md)
+- [cosmosfarm_members_template_subscription_product_price](filters/cosmosfarm_members_template_subscription_product_price.md)
+- [cosmosfarm_members_template_subscription_product_single_template](filters/cosmosfarm_members_template_subscription_product_single_template.md)
+- [cosmosfarm_members_template_subscription_product_title](filters/cosmosfarm_members_template_subscription_product_title.md)
+- [cosmosfarm_members_template_subscription_product_type](filters/cosmosfarm_members_template_subscription_product_type.md)
+- [cosmosfarm_members_template_user_profile](filters/cosmosfarm_members_template_user_profile.md)
+- [cosmosfarm_members_template_users](filters/cosmosfarm_members_template_users.md)
+- [cosmosfarm_members_template_users_list](filters/cosmosfarm_members_template_users_list.md)
+- [cosmosfarm_members_template_users_list_item](filters/cosmosfarm_members_template_users_list_item.md)
+- [cosmosfarm_members_use_login_timeout](filters/cosmosfarm_members_use_login_timeout.md)
+- [cosmosfarm_members_user_display_name](filters/cosmosfarm_members_user_display_name.md) - cosmosfarm_members_user_display_name() 함수 내부에서 $display_name 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_user_register_role_list](filters/cosmosfarm_members_user_register_role_list.md) - cosmosfarm_members_user_register_role() 함수 내부에서 $value 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_users_csv_download_add_usermeta](filters/cosmosfarm_members_users_csv_download_add_usermeta.md)
+- [cosmosfarm_members_users_csv_download_columns](filters/cosmosfarm_members_users_csv_download_columns.md)
+- [cosmosfarm_members_users_csv_download_row_data](filters/cosmosfarm_members_users_csv_download_row_data.md)
+- [cosmosfarm_members_users_csv_download_usermeta_value](filters/cosmosfarm_members_users_csv_download_usermeta_value.md)
+- [cosmosfarm_members_users_list_query_args](filters/cosmosfarm_members_users_list_query_args.md) - 해당 파일 내에서 $args 값을 필터링할 수 있도록 호출됩니다.
 
 이 문서는 Cosmosfarm Members 플러그인에서 사용되는 `apply_filters` 훅들을 정리한 것입니다. `apply_filters`는 특정 값을 변경하거나 필터링할 수 있도록 합니다.
 

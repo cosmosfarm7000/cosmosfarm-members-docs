@@ -1,7 +1,7 @@
 # cosmosfarm_members_comments_notify_display
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_KBoard.class.php:117`
+- **정의 위치**: `class/Cosmosfarm_Members_KBoard.class.php:117`
 - **실행 시점**: KBoard 게시판에서 댓글 알림 옵션 체크박스의 표시 여부를 필터링합니다. 댓글 작성 시 알림 수신 동의 옵션을 표시할지 제어할 수 있습니다.
 - **인자 정보**:
   - `$display (bool)`: 댓글 알림 체크박스의 표시 여부. 기본적으로 로그인한 사용자에게만 true로 설정되어 체크박스가 표시되며, 비로그인 사용자의 경우 false입니다. 이 값을 변경하여 특정 조건에서 알림 옵션을 표시하거나 숨길 수 있습니다.

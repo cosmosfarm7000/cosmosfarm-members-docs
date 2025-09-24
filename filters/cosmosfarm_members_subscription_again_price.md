@@ -1,7 +1,7 @@
 # cosmosfarm_members_subscription_again_price
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:4519`
 - **실행 시점**: 구독 재결제 시 적용될 가격을 계산할 때 실행됩니다. 재결제 가격을 할인하거나 조정할 수 있습니다.
 - **인자 정보**:
   - `$again_price (float)`: 재결제 가격.

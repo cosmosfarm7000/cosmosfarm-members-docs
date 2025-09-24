@@ -1,7 +1,7 @@
 # cosmosfarm_members_category_restriction
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members.class.php:2241`
+- **정의 위치**: `class/Cosmosfarm_Members.class.php:2241`
 - **실행 시점**: 게시물 접근 제한을 확인할 때 각 카테고리의 제한 설정을 필터링합니다. 카테고리별 접근 권한을 동적으로 제어할 수 있습니다.
 - **인자 정보**:
   - `$category_restriction (string)`: 카테고리의 메타 데이터에서 가져온 접근 제한 설정 값. 가능한 값은 빈 문자열("")로 전체 공개를 의미하거나, "1"로 선택된 사용자 역할만 접근을 허용하는 제한 설정을 의미합니다. 필터 함수에서 이 값을 변경하여 카테고리의 접근 제한을 동적으로 조정할 수 있습니다.

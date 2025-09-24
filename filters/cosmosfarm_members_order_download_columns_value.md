@@ -1,7 +1,7 @@
 # cosmosfarm_members_order_download_columns_value
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:2024`
 - **실행 시점**: 주문 데이터를 다운로드할 때 각 컬럼의 값을 설정할 때 실행됩니다. 특정 컬럼에 대한 데이터를 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$column_value (string)`: 컬럼의 값. 기본적으로 주문 데이터에서 가져온 값입니다.

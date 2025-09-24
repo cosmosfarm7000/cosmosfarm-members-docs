@@ -1,7 +1,7 @@
 # cosmosfarm_members_comments_notify_text
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_KBoard.class.php:122`
+- **정의 위치**: `class/Cosmosfarm_Members_KBoard.class.php:122`
 - **실행 시점**: KBoard 게시판에서 댓글 알림 체크박스의 표시 텍스트를 필터링합니다. 댓글 작성 시 표시되는 알림 동의 문구를 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$text (string)`: 댓글 알림 체크박스에 표시될 텍스트. 기본값은 영어로 "Notify me of new comments"이며, 다국어 지원을 위해 __() 함수로 감싸져 있습니다. 이 텍스트를 변경하여 사용자에게 표시될 메시지를 커스터마이징할 수 있습니다.

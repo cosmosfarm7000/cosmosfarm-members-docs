@@ -1,7 +1,7 @@
 # cosmosfarm_members_order_download_columns
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:1937`
 - **실행 시점**: 주문 데이터를 다운로드할 때 포함될 컬럼 목록을 설정할 때 실행됩니다. 다운로드 파일에 포함될 컬럼을 추가하거나 제거할 수 있습니다.
 - **인자 정보**:
   - `$columns (array)`: 다운로드 컬럼 배열. 각 키는 컬럼 식별자, 값은 컬럼 표시 이름입니다.

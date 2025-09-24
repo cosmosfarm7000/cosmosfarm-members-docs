@@ -1,7 +1,7 @@
 # cosmosfarm_members_comments_notify_insert
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_KBoard.class.php:154`
+- **정의 위치**: `class/Cosmosfarm_Members_KBoard.class.php:154`
 - **실행 시점**: KBoard 게시판에서 댓글 알림을 발송하기 전에 알림 데이터를 필터링합니다. 댓글 작성 시 생성되는 알림의 내용과 대상을 수정할 수 있습니다.
 - **인자 정보**:
   - `$notification (array)`: 알림 데이터 배열. 다음과 같은 키를 포함합니다: 'to_user_id'(알림을 받을 사용자 ID), 'title'(알림 제목), 'content'(알림 내용), 'item_type'(알림 유형, 기본값 'default'), 'meta_input'(추가 메타 데이터로 url과 url_name 포함). 이 배열을 수정하여 알림의 내용이나 대상을 변경할 수 있습니다.

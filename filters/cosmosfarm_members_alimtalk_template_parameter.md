@@ -1,7 +1,7 @@
 # cosmosfarm_members_alimtalk_template_parameter
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_Sms_Nhn.class.php:23, 127`, `..\class\Cosmosfarm_Members_Sms_Solapi.php:126`
+- **정의 위치**: `class/Cosmosfarm_Members_Sms_Nhn.class.php:23`
 - **실행 시점**: 알림톡 메시지를 전송하기 전에 템플릿 파라미터를 필터링합니다. SMS 발송 과정에서 템플릿 변수들을 동적으로 수정하거나 추가할 수 있습니다.
 - **인자 정보**:
   - `$template_parameter (array)`: 알림톡 템플릿에 사용할 변수들의 연관 배열. 키는 템플릿에서 정의된 변수명(예: "이름", "주소", "주문번호"), 값은 실제 치환될 문자열 값입니다. 빈 배열일 수 있으며, 필터에서 새로운 변수를 추가하거나 기존 값을 수정할 수 있습니다.

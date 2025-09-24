@@ -1,7 +1,7 @@
 # cosmosfarm_members_subscription_pay_success_url
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_Skin.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Skin.class.php:1200`
 - **실행 시점**: 구독 결제 완료 후 사용자를 리다이렉트할 URL을 설정할 때 실행됩니다. 결제 성공 페이지나 완료 페이지로의 이동을 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$pay_success_url (string)`: 결제 성공 후 리다이렉트될 URL. 기본적으로는 결제 완료 페이지 설정이 있으면 해당 페이지 URL로, 없으면 referrer URL로 설정됩니다. 상품 ID가 쿼리 파라미터로 추가됩니다.

@@ -1,7 +1,7 @@
 # cosmosfarm_members_kboard_notify_comments_insert
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_KBoard.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_KBoard.class.php:98`
 - **실행 시점**: KBoard 게시판에 댓글이 삽입될 때, 알림 데이터를 생성하기 전에 실행됩니다. 댓글 작성 시 발송될 알림의 내용을 커스터마이징할 수 있습니다.
 - **인자 정보**:
   - `$notification (array)`: 알림 데이터 배열. 알림 제목, 내용, 수신자 등의 정보를 포함합니다.

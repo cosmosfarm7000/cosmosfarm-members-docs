@@ -1,7 +1,7 @@
 # cosmosfarm_members_header_menu_items
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_Skin.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Skin.class.php:137`
 - **실행 시점**: 헤더 메뉴 항목들이 기본적으로 설정된 후, 현재 페이지 결정 전에 실행됩니다. 기본 메뉴 항목(프로필, 주문, 알림, 메시지, 회원 목록 등)이 설정된 상태에서 추가/수정/삭제할 수 있습니다.
 - **인자 정보**:
   - `$menu_items (array)`: 헤더 메뉴 항목들의 연관 배열. 각 메뉴 항목은 다음과 같은 구조를 가집니다:

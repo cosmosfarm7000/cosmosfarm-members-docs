@@ -1,7 +1,7 @@
 # cosmosfarm_members_header_menu_current_page
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_Skin.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Skin.class.php:139`
 - **실행 시점**: 헤더 메뉴를 렌더링할 때, 메뉴 항목이 설정된 후 현재 페이지 식별자를 결정하기 전에 실행됩니다.
 - **인자 정보**:
   - `$current_page (string|int)`: 현재 페이지의 식별자. 기본적으로는 현재 포스트 ID이거나 특정 페이지(프로필, 주문, 알림 등)에 따라 미리 정의된 값('profile', 'orders', 'notifications' 등)이 설정됩니다.

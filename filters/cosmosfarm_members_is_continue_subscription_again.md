@@ -1,7 +1,7 @@
 # cosmosfarm_members_is_continue_subscription_again
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:4454`
 - **실행 시점**: 구독 재결제 프로세스 중, 재결제를 계속 진행할지 여부를 결정할 때 실행됩니다. 이전 주문과 상품 정보를 기반으로 재결제 진행 여부를 필터링할 수 있습니다.
 - **인자 정보**:
   - `$is_continue (bool)`: 재결제를 계속할지 여부를 나타내는 불리언 값. 기본적으로 true입니다.

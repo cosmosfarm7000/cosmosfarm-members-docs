@@ -1,7 +1,7 @@
 # cosmosfarm_members_use_login_timeout
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_Controller.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:3209`
 - **실행 시점**: 로그인 타임아웃 기능을 사용할지 여부를 결정할 때 옵션 값을 필터링합니다.
 - **인자 정보**:
   - `$use_login_timeout_option_value (string)`: 자동 로그아웃 설정 시간 옵션 값.

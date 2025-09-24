@@ -1,7 +1,7 @@
 # cosmosfarm_members_template_messages_list_item
 
 - **분류**: Filter
-- **정의 위치**: `..\class\Cosmosfarm_Members_Skin.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Skin.class.php:508`
 - **실행 시점**: 메시지 목록 항목 템플릿 파일 경로를 설정할 때 실행됩니다.
 - **인자 정보**:
   - `$file_path (string)`: 템플릿 파일 경로.

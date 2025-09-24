@@ -1,7 +1,7 @@
 # cosmosfarm_members_messages_subnotify_update_result
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Controller.class.php:5467`
 - **실행 시점**: 사용자가 메시지 알림 구독 설정을 변경한 후, 업데이트 결과를 처리할 때 실행됩니다. 메시지 알림 구독 설정 변경 성공/실패 상태를 필터링할 수 있습니다.
 - **인자 정보**:
   - `$result (object)`: 메시지 구독 업데이트 결과 객체. success (bool), message (string) 등의 속성을 포함합니다.

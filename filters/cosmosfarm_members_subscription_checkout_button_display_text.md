@@ -1,7 +1,7 @@
 # cosmosfarm_members_subscription_checkout_button_display_text
 
 - **분류**: Filter
-- **정의 위치**: `class/Cosmosfarm_Members_Skin.class.php`
+- **정의 위치**: `class/Cosmosfarm_Members_Skin.class.php:1298`
 - **실행 시점**: 구독 결제 페이지에서 결제 버튼의 텍스트를 설정할 때 실행됩니다. 결제 버튼에 표시될 텍스트를 상황에 따라 변경할 수 있습니다.
 - **인자 정보**:
   - `$text (string)`: 버튼에 표시될 텍스트.
