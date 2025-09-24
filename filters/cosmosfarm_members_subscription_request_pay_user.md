@@ -4,10 +4,10 @@
 - **정의 위치**: `..\class\Cosmosfarm_Members_Controller.class.php`class/Cosmosfarm_Members_Controller.class.php``
 - **실행 시점**: 구독 결제 요청 시 사용자 객체를 필터링합니다.
 - **인자 정보**:
-  - `$user (mixed)`: 파라미터 1
-  - `$product (mixed)`: 파라미터 2
-  - `$meta_input (mixed)`: 파라미터 3
-  - `$custom_data (mixed)`: 파라미터 4
+  - `$user (WP_User)`: WordPress 사용자 객체.
+  - `$product (Cosmosfarm_Members_Subscription_Product)`: 구독 상품 객체.
+  - `$meta_input (array)`: 메타 입력 데이터.
+  - `$custom_data (array)`: 사용자 정의 데이터.
 - **예제 코드**:
 
   ```php

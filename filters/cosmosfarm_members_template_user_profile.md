@@ -4,7 +4,7 @@
 - **정의 위치**: `..\class\Cosmosfarm_Members_Skin.class.php`
 - **실행 시점**: 사용자 프로필 템플릿 파일 경로를 설정할 때 실행됩니다.
 - **인자 정보**:
-  - `$file_path (mixed)`: 파라미터 1
+  - `$file_path (string)`: 템플릿 파일 경로.
 - **예제 코드**:
 
   ```php

@@ -4,14 +4,14 @@
 - **정의 위치**: `..\class\Cosmosfarm_Members_Skin.class.php`
 - **실행 시점**: 주문 목록 항목 템플릿 파일 경로를 설정할 때 실행됩니다.
 - **인자 정보**:
-  - `$file_path (mixed)`: 파라미터 1
-  - `$item_type (mixed)`: 파라미터 2
-  - `$item (mixed)`: 파라미터 3
+  - `$file_path (string)`: 템플릿 파일 경로.
+  - `$item_type (string)`: 항목 유형 (예: 'order').
+  - `$item (object)`: 주문 항목 객체.
 - **예제 코드**:
 
   ```php
-  add_filter('cosmosfarm_members_template_orders_list_item', 'my_custom_orders_list_item_template');
-    function my_custom_orders_list_item_template($file_path) {
+  add_filter('cosmosfarm_members_template_orders_list_item', 'my_custom_orders_list_item_template', 10, 3);
+    function my_custom_orders_list_item_template($file_path, $item_type, $item) {
         return get_stylesheet_directory() . '/cosmosfarm-members/orders-list-item.php';
     }
   ```

@@ -4,13 +4,13 @@
 - **정의 위치**: `..\class\Cosmosfarm_Members_Controller.class.php`
 - **실행 시점**: 로그인 타임아웃 기능을 사용할지 여부를 결정할 때 옵션 값을 필터링합니다.
 - **인자 정보**:
-  - `$use_login_timeout`: 자동 로그아웃 설정 시간
-  - `$option`: 코스모스팜 회원관리 옵션
+  - `$use_login_timeout_option_value (string)`: 자동 로그아웃 설정 시간 옵션 값.
+  - `$option (Cosmosfarm_Members_Option)`: 코스모스팜 회원관리 옵션 객체.
 - **예제 코드**:
 
   ```php
-  add_filter('cosmosfarm_members_use_login_timeout', 'my_custom_login_timeout_setting');
-    function my_custom_login_timeout_setting($use_login_timeout, $option) {
+  add_filter('cosmosfarm_members_use_login_timeout', 'my_custom_login_timeout_setting', 10, 2);
+    function my_custom_login_timeout_setting($use_login_timeout_option_value, $option) {
         return false; // 로그인 타임아웃 기능 비활성화
     }
   ```

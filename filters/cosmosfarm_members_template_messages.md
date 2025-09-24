@@ -4,13 +4,13 @@
 - **정의 위치**: `..\class\Cosmosfarm_Members_Skin.class.php`
 - **실행 시점**: 메시지 템플릿 파일 경로를 설정할 때 실행됩니다.
 - **인자 정보**:
-  - `$file_path (mixed)`: 파라미터 1
-  - `$to_user_id (mixed)`: 파라미터 2
+  - `$file_path (string)`: 템플릿 파일 경로.
+  - `$to_user_id (int)`: 메시지를 받는 사용자 ID.
 - **예제 코드**:
 
   ```php
-  add_filter('cosmosfarm_members_template_messages', 'my_custom_messages_template');
-    function my_custom_messages_template($file_path) {
+  add_filter('cosmosfarm_members_template_messages', 'my_custom_messages_template', 10, 2);
+    function my_custom_messages_template($file_path, $to_user_id) {
         return get_stylesheet_directory() . '/cosmosfarm-members/messages.php';
     }
   ```

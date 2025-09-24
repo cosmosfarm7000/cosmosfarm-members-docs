@@ -4,13 +4,13 @@
 - **정의 위치**: `..\class\Cosmosfarm_Members_Skin.class.php`
 - **실행 시점**: 계정 링크 템플릿 파일 경로를 설정할 때 실행됩니다.
 - **인자 정보**:
-  - `$file_path (mixed)`: 파라미터 1
-  - `$args (mixed)`: 파라미터 2
+  - `$file_path (string)`: 템플릿 파일 경로.
+  - `$args (array)`: 템플릿에 전달되는 인수 배열.
 - **예제 코드**:
 
   ```php
-  add_filter('cosmosfarm_members_template_account_links', 'my_custom_account_links_template');
-    function my_custom_account_links_template($file_path) {
+  add_filter('cosmosfarm_members_template_account_links', 'my_custom_account_links_template', 10, 2);
+    function my_custom_account_links_template($file_path, $args) {
         return get_stylesheet_directory() . '/cosmosfarm-members/account-links.php';
     }
   ```

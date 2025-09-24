@@ -4,7 +4,7 @@
 - **정의 위치**: `..\class\Cosmosfarm_Members_Skin.class.php`class/Cosmosfarm_Members_Skin.class.php``
 - **실행 시점**: 구독 결제 수단 템플릿 파일 경로를 필터링합니다.
 - **인자 정보**:
-  - `$file_path (mixed)`: 파라미터 1
+  - `$file_path (string)`: 템플릿 파일 경로.
 - **예제 코드**:
 
   ```php

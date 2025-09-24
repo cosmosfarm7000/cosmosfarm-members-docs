@@ -4,13 +4,13 @@
 - **정의 위치**: `..\class\Cosmosfarm_Members_Skin.class.php`
 - **실행 시점**: 로그인 폼 템플릿 파일 경로를 설정할 때 실행됩니다.
 - **인자 정보**:
-  - `$file_path (mixed)`: 파라미터 1
-  - `$action (mixed)`: 파라미터 2
+  - `$file_path (string)`: 템플릿 파일 경로.
+  - `$action (string)`: 현재 액션 (예: 'login').
 - **예제 코드**:
 
   ```php
-  add_filter('cosmosfarm_members_template_login_form', 'my_custom_login_form_template');
-    function my_custom_login_form_template($file_path) {
+  add_filter('cosmosfarm_members_template_login_form', 'my_custom_login_form_template', 10, 2);
+    function my_custom_login_form_template($file_path, $action) {
         return get_stylesheet_directory() . '/cosmosfarm-members/login-form.php';
     }
   ```

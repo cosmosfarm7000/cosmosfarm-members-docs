@@ -4,7 +4,12 @@
 - **정의 위치**: `..\class\Cosmosfarm_Members_Controller.class.php`class/Cosmosfarm_Members_Controller.class.php``
 - **실행 시점**: 구독 결제 시 적용될 포인트 잔액을 필터링합니다.
 - **인자 정보**:
-  - `$mycred_get_users_balance($user->ID (mixed)`: 파라미터 1
+  - `$mycred_balance (float)`: 사용자의 현재 myCRED 포인트 잔액.
+  - `$user_id (int)`: 사용자 ID.
+  - `$coupon_price (float)`: 쿠폰 적용 후 가격.
+  - `$product (Cosmosfarm_Members_Subscription_Product)`: 구독 상품 객체.
+  - `$meta_input (array)`: 메타 입력 데이터.
+  - `$custom_data (array)`: 사용자 정의 데이터.
 - **예제 코드**:
 
   ```php

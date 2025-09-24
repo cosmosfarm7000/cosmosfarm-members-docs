@@ -4,7 +4,7 @@
 - **정의 위치**: `class/Cosmosfarm_Members_Skin.class.php`
 - **실행 시점**: 모바일 앱에서 구독 결제를 진행할 때 사용할 앱 스킴을 설정할 때 실행됩니다. 결제 완료 후 앱으로 돌아가기 위한 스킴을 지정할 수 있습니다.
 - **인자 정보**:
-  - `$scheme (string)`: 앱 스킴 (예: 'myapp://payment').
+  - `$scheme (string)`: 앱 스킴 (예: 'myapp://payment'). **초기값은 빈 문자열입니다.**
   - `$product (Cosmosfarm_Members_Subscription_Product)`: 구독 상품 객체.
 - **예제 코드**:
 

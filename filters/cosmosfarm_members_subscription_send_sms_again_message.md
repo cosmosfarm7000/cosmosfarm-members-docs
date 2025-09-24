@@ -4,9 +4,9 @@
 - **정의 위치**: `..\class\Cosmosfarm_Members.class.php`
 - **실행 시점**: 구독 상품의 정기결제 재결제 성공 시 발송되는 SMS 메시지를 필터링합니다.
 - **인자 정보**:
-  - `$sms (mixed)`: 파라미터 1
-  - `$order (mixed)`: 파라미터 2
-  - `$product (mixed)`: 파라미터 3
+  - `$sms (array)`: SMS 데이터 배열. 'content' 등의 키를 포함합니다.
+  - `$order (Cosmosfarm_Members_Subscription_Order)`: 구독 주문 객체.
+  - `$product (Cosmosfarm_Members_Subscription_Product)`: 구독 상품 객체.
 - **예제 코드**:
 
   ```php

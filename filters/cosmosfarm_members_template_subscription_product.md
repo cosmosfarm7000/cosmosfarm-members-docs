@@ -4,13 +4,13 @@
 - **정의 위치**: `..\class\Cosmosfarm_Members_Skin.class.php`
 - **실행 시점**: 정기결제 상품 템플릿 파일 경로를 설정할 때 실행됩니다.
 - **인자 정보**:
-  - `$file_path (mixed)`: 파라미터 1
-  - `$product (mixed)`: 파라미터 2
+  - `$file_path (string)`: 템플릿 파일 경로.
+  - `$product (Cosmosfarm_Members_Subscription_Product)`: 구독 상품 객체.
 - **예제 코드**:
 
   ```php
-  add_filter('cosmosfarm_members_template_subscription_product', 'my_custom_subscription_product_template');
-    function my_custom_subscription_product_template($file_path) {
+  add_filter('cosmosfarm_members_template_subscription_product', 'my_custom_subscription_product_template', 10, 2);
+    function my_custom_subscription_product_template($file_path, $product) {
         return get_stylesheet_directory() . '/cosmosfarm-members/subscription-product.php';
     }
   ```
