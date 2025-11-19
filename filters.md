@@ -26,6 +26,8 @@
 - [cosmosfarm_members_header_menu_items](filters/cosmosfarm_members_header_menu_items.md)
 - [cosmosfarm_members_init_values_inicis_mobile](filters/cosmosfarm_members_init_values_inicis_mobile.md) - 해당 파일 내에서 $pg 값을 필터링할 수 있도록 호출됩니다.
 - [cosmosfarm_members_init_values_inicis_pc](filters/cosmosfarm_members_init_values_inicis_pc.md) - 해당 파일 내에서 $pg 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_init_values_nicepay_mobile](#cosmosfarm_members_init_values_nicepay_mobile) - 해당 파일 내에서 $pg 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_init_values_nicepay_pc](#cosmosfarm_members_init_values_nicepay_pc) - 해당 파일 내에서 $pg 값을 필터링할 수 있도록 호출됩니다.
 - [cosmosfarm_members_init_values_welcomepay_pc](filters/cosmosfarm_members_init_values_welcomepay_pc.md) - 해당 파일 내에서 $pg 값을 필터링할 수 있도록 호출됩니다.
 - [cosmosfarm_members_is_continue_subscription_again](filters/cosmosfarm_members_is_continue_subscription_again.md)
 - [cosmosfarm_members_kboard_notify_comments_insert](filters/cosmosfarm_members_kboard_notify_comments_insert.md)
@@ -1554,6 +1556,7 @@ function my_custom_payment_method_template($file_path) {
 ### `cosmosfarm_members_alimtalk_template_parameter`
 
 * **설명**: 알림톡 템플릿 파라미터를 필터링합니다.
+* **참고**: 코드 내에 오타가 있는 `cosmosfarm_members_alimtalk_template_paremeter` 훅도 존재하며, 두 훅 모두 동작합니다.
 * **파일**: `class/Cosmosfarm_Members_Sms_Nhn.class.php`, `class/Cosmosfarm_Members_Sms_Solapi.php`
 
 ```php
@@ -1563,3 +1566,29 @@ function my_custom_alimtalk_template_param($template_parameter, $template_code) 
     return $template_parameter;
 }
 ```
+
+### `cosmosfarm_members_init_values_nicepay_mobile`
+*   **설명**: 나이스페이(NicePay) 모바일 결제창을 초기화할 때 실행됩니다. 결제 요청에 필요한 파라미터 값을 수정하거나 추가할 수 있습니다.
+*   **파일**: `class/pg/nicepay/dialog-mobile.php`
+*   **예제**:
+    ```php
+    add_filter('cosmosfarm_members_init_values_nicepay_mobile', 'my_custom_nicepay_mobile_init_values');
+    function my_custom_nicepay_mobile_init_values($pg) {
+        // 결제 상품명을 변경
+        $pg['GoodsName'] = 'Custom Product Name (Mobile)';
+        return $pg;
+    }
+    ```
+
+### `cosmosfarm_members_init_values_nicepay_pc`
+*   **설명**: 나이스페이(NicePay) PC 결제창을 초기화할 때 실행됩니다. 결제 요청에 필요한 파라미터 값을 수정하거나 추가할 수 있습니다.
+*   **파일**: `class/pg/nicepay/dialog.php`
+*   **예제**:
+    ```php
+    add_filter('cosmosfarm_members_init_values_nicepay_pc', 'my_custom_nicepay_pc_init_values');
+    function my_custom_nicepay_pc_init_values($pg) {
+        // 결제 상품명을 변경
+        $pg['GoodsName'] = 'Custom Product Name';
+        return $pg;
+    }
+    ```
