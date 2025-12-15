@@ -17,6 +17,7 @@
 - [cosmosfarm_members_comments_notify_text](filters/cosmosfarm_members_comments_notify_text.md)
 - [cosmosfarm_members_courier_company_list](filters/cosmosfarm_members_courier_company_list.md) - cosmosfarm_members_courier_company_list() 함수 내부에서 $courier_company_list 값을 필터링할 수 있도록 호출됩니다.
 - [cosmosfarm_members_currency_format](filters/cosmosfarm_members_currency_format.md) - cosmosfarm_members_currency_format() 함수 내부에서 $format 값을 필터링할 수 있도록 호출됩니다.
+- [cosmosfarm_members_dodopayments_currencies](filters/cosmosfarm_members_dodopayments_currencies.md) - DodoPayments에서 지원하는 통화 목록을 필터링합니다.
 - [cosmosfarm_members_dormant_member_alert_email](filters/cosmosfarm_members_dormant_member_alert_email.md) - cosmosfarm_members_dormant_member() 함수 내부에서 $value 값을 필터링할 수 있도록 호출됩니다.
 - [cosmosfarm_members_exists_check_result](filters/cosmosfarm_members_exists_check_result.md)
 - [cosmosfarm_members_friendtalk_every_recipient_list](filters/cosmosfarm_members_friendtalk_every_recipient_list.md) - Cosmosfarm_Members_Sms_Nhn::send_every_execute_friendtalk() 메서드 내부에서 $recipient_list 값을 필터링할 수 있도록 호출됩니다.
